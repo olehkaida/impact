@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// @font-face {
+//     font-family: 'Gotham';
+//     src:  url('../fonts/Gotham-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+//      font-weight: 700;
+//      font-style: normal;
+//    }
+
+//   @font-face {
+//     font-family: 'Gotham';
+//     src: url('../fonts/GothamMedium.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+//      font-weight: 400;
+//      font-style: normal;
+//    }
+
+//   @font-face {
+//     font-family: 'Gotham';
+
+//     src: url('../fonts/Gotham-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+//      font-weight: 300;
+//      font-style: normal;
+//    }
+
+
+
+
+
+
+
+
+
+
+
+.page-title{
+    font-size: rem(36);
+    font-weight: 700;
+    line-height: rem(44);
+    margin-bottom: 24px;
+    margin-top: 24px;
+    @include tablet {
+        font-size: rem(60);
+        line-height: rem(72);
+
+    }
+
+}
+.page-description{
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(28);
+
+    @include tablet {
+        font-size: rem(30);
+        line-height: rem(38);
+    }
+}
+.section-pre-title{
+    text-align: center;
+    font-size: rem(16);
+    font-weight: 700;
+    line-height: rem(24);
+    color:$main-1;
+    margin-bottom: 12px;
+}
+.section-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: rem(30);
+    line-height: rem(38);
+    color: $main-1;
+    margin: 0 auto;
+    @include tablet {
+        font-size: rem(48);
+        line-height: rem(60);
+        margin-bottom: 20px;
+    }
+}
+.section-description{
+    text-align: center;
+    font-size: rem(18);
+    line-height: rem(28);
+    color:#475467;
+    @include tablet {
+        font-size: rem(20);
+        line-height: rem(30);
+    }
+}
+.eyebrow{
+    max-width: 1056px;
+    font-size: rem(30);
+    line-height: rem(38);
+    color: $main-1;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    b{
+      color: $blue-9;
+    }
+
+    @include tablet {
+        font-size: rem(30);
+        line-height: rem(38);
+    }
+    @include laptop {
+        font-size: rem(48);
+        line-height: rem(60);
+    }
+}

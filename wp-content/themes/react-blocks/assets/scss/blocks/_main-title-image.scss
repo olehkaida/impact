@@ -1,0 +1,137 @@
+.main-title-image{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--gradient-1, linear-gradient(322deg, #30364A 0%, #1F2334 100%));
+
+    @include phone-lg{
+        padding: 16px;
+    }
+    @include tablet {
+        padding: 16px;
+    }
+    @include laptop{
+         padding: 16px;
+    }
+    @include desktop{
+        padding: 16px;
+    }
+    @include full-width{
+        padding: 16px;
+    }
+    @include full-width-xl{
+        padding: 16px;
+    }
+    @include big-desktop{
+        padding: 16px;
+    }
+
+
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0px 6px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        .content-title-description-button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            align-self: stretch;
+            .content-title-description{
+                display: flex;
+                max-width: 1024px;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                .page-title{
+                    display: flex;
+                    margin: 0 auto;
+                    max-width: 970px;
+                    flex-direction: column;
+
+
+                    color: var(--base-white, #FFF);
+                    text-align: center;
+
+                    /* Display 2xl/Heavy */
+                    font-size: 72px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 90px;
+                    letter-spacing: -1.44px;
+                }
+                .page-description{
+                    display: flex;
+                    max-width: 768px;
+                    flex-direction: column;
+
+                    color: var(--gray-300, #BFBFBF);
+                    text-align: center;
+
+                    /* Text xl/Regular */
+                    font-size: 20px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+            .action-buttons{
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                .explore_the_market{
+                    display: flex;
+                    padding: 12px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 8px;
+                    border: 1px solid var(--primary-600, #EE4E54);
+                    background: var(--primary-600, #EE4E54);
+
+                    /* Shadow/xs */
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                    color: var(--base-white, #FFF);
+
+                    /* Text md/Semibold */
+                    font-size: 16px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .block-image{
+            margin: 64px auto -64px auto;
+            border-radius: 36px;
+            position: relative;
+            display: flex;
+            max-widthwidth: 1280px;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            z-index: 1;
+            @include tablet{
+                max-width: 75%;
+            }
+            @include laptop{
+                max-width: 75%;
+            }
+            @include big-desktop {
+                max-width: 100%;
+            }
+        }
+    }
+}

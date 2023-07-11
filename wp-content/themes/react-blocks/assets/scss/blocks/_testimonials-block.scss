@@ -1,0 +1,168 @@
+.testimonials-block{
+    width: 100%;
+    padding: 25px 0;
+    margin-top: -1px;
+    position: relative;
+    background-color: white;
+
+    @include laptop{
+        padding: 46px 0;
+    }
+    .container{
+        .section-title{
+            max-width: 773px;
+            margin-bottom: 24px;
+            @include laptop{
+                line-height: rem(60);
+            }
+        }
+        .section-description{
+            color:#475467;
+            margin-bottom: 25px;
+            @include laptop{
+                margin-bottom: 48px;
+            }
+        }
+        .testimonial{
+            border-radius: 24px;
+            flex-wrap: wrap;
+            padding-top: 0;
+            @include tablet{
+                flex-wrap:nowrap;
+            }
+            .testimonial-col{
+                padding: 40px 32px;
+                background-color:$blue-9;
+                position: relative;
+                border-radius: 24px 24px 0px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &::after{
+                    content: '';
+                    background-image:  url("../../assets/images/mobile-group.svg");
+                    position: absolute;
+                    width: 100%;
+                    max-width: 513px;
+                    height: 100%;
+                    bottom: -35%;
+                    left: 0;
+                    z-index: 1;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                }
+                @include tablet{
+                    padding: 20px 12px;
+                }
+                @include desktop{
+
+                    padding: 64px;
+                }
+                .testimonial-info{
+                    font-size: rem(18);
+                    line-height: rem(28);
+                    font-weight: 400;
+                    color: $white;
+                    z-index: 2;
+                    position: relative;
+                    @include desktop{
+                        font-size: rem(24);
+                        line-height: rem(32);
+
+                        font-weight: 500;
+                        max-width: 686px;
+                    }
+                }
+                .author-name{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $white;
+                    margin-bottom: 6px;
+                    z-index: 4;
+                }
+                .author-info{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $white;
+                    z-index: 4;
+                }
+
+            }
+            .testimonial-image{
+                display: none;
+                @include tablet{
+                    object-fit: cover;
+                    display: block;
+
+                    max-width: 50%;
+                }
+
+            }
+            .mobile-image{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 0px 0px 24px 24px;
+                @include tablet{
+                    display: none;
+                }
+            }
+        }
+        .left{
+            .testimonial-col{
+
+                @include tablet{
+                    border-radius: 24px 0px 0px 24px;
+                    &::after{
+                        content:'';
+                        background-image:  url("../../assets/images/left-group.svg");
+                        position: absolute;
+
+                        height: 100%;
+                        left:100%;
+                        top:0;
+                        bottom: 0;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+
+            }
+            .testimonial-image{
+                @include tablet{
+                    border-radius: 0 24px 24px 0px;
+                }
+            }
+
+        }
+        .right{
+            flex-direction: row-reverse;
+            @include tablet{
+                .testimonial-col{
+                    border-radius: 0 24px 24px 0px;
+                    &::before{
+                        content:'';
+                        background-image:  url("../../assets/images/right-group.svg");
+                        position: absolute;
+                        width:123px;
+                        height: 100%;
+                        right:100%;
+                        top:0;
+                        bottom: 0;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            .testimonial-image{
+                border-radius: 24px 0px 0px 24px;
+            }
+        }
+    }
+}

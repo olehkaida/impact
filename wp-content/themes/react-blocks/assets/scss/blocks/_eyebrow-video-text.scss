@@ -1,0 +1,76 @@
+.eyebrow-video-text{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/video-section2.svg");
+    padding: 25px 0;
+    @include laptop{
+        padding: 46px 0;
+    }
+    @include full-width{
+        padding: 46px 0 245px 0;
+    }
+    @include full-width-xl{
+        padding: 75px 0 250px 0;
+    }
+    @include big-desktop {
+        padding: 10rem 0 25rem 0;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .eyebrow{
+            margin-bottom: 40px;
+            @include desktop{
+                margin-bottom: 120px;
+            }
+        }
+        .video-hook{
+            width: 100%;
+            position: relative;
+            @include desktop{
+                max-width: 75%;
+            }
+            @include big-desktop{
+                max-width: 100%;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                width: 64px;
+                height: 64px;
+                background-image: url("../../assets/images/play-button-64.svg");
+                right: 25px;
+                bottom: 75px;
+                display: block;
+                z-index: 1;
+                @include desktop{
+                    content: "";
+                    position: absolute;
+                    width: 128px;
+                    height: 128px;
+                    background-image: url(../../assets/images/play-button.svg);
+                    right: 25px;
+                    bottom: 75px;
+                    display: block;
+                    z-index: 1;
+                }
+            }
+            img{
+                display: block;
+                margin: 61px auto;
+                border-radius: 32px;
+                position: relative;
+            }
+        }
+        .block-image{
+            width: 100%;
+            max-width: 916px;
+            @include big-desktop {
+                max-width: 100%;
+            }
+
+        }
+    }
+}

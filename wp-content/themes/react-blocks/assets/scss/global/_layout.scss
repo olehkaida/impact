@@ -1,0 +1,31 @@
+.container{
+    position:relative;
+    width:100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    @include tablet{
+        padding: 0 32px;
+    }
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display:grid;
+}
+
+
+.section-heading-block{
+    margin-bottom: 30px;
+    @include laptop {
+        margin-bottom: 64px;
+    }
+}
+.divider{
+    width:56px;
+    height: 1px;
+    background-color: #A4CD39;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,123 @@
+
+/* Colors */
+$white:#ffffff;
+$black:#000000;
+$black-1:#101828;
+$main-1:#1F2334E5;
+$footer-1:#1D2939;
+$blue-2:#088AB2;
+$blue-3:#CCDFEA;
+$blue-4:#EAF3F9;
+$blue-5:#E6EFF5;
+$blue-6:#F7FCFF;
+$blue-7:#004D7A;
+$blue-8:#99BFD6;
+$blue-9:#51BAEA;
+$gray-1:#D0D5DD;
+$gray-2:#EAECF0;
+$gray-3:#F9FAFB;
+$gray-4:#344054;
+$gray-5:#F2F4F7;
+$gray-6:#475467;
+$green-1:#12B76A;
+$green-2:#A4CD39;
+$green-3:#93D500;
+$pink-1:#F4EBFF;
+
+// Breakpoints
+$phone: 320px;
+$phone-lg:480px;
+$tablet: 768px;
+$laptop: 993px;
+$desktop: 1200px;
+$full-width: 1600px;
+$full-width-xl:1920px;
+$big-desktop: 2100px;
+
+$breakpoints: (
+        'phone': $phone,
+        'phone-lg':$phone-lg,
+        'tablet': $tablet,
+        'laptop': $laptop,
+        'desktop': $desktop,
+        'full-width': $full-width,
+        'full-width-xl': $full-width-xl,
+        'big-desktop': $big-desktop
+);
+//mixins
+@mixin phone {
+    @media (min-width: $phone) and (max-width: 767px) {
+      @content;
+    }
+}
+@mixin phone-lg {
+    @media (min-width: $phone-lg) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: $laptop) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+@mixin full-width {
+    @media (min-width: $full-width) {
+        @content;
+    }
+}
+@mixin full-width-xl {
+    @media (min-width: $full-width-xl) {
+        @content;
+    }
+}
+@mixin big-desktop {
+    @media (min-width: $big-desktop) {
+        @content;
+    }
+}
+@mixin _xs {
+    @media (max-width: 575.98px){
+        @content;
+    }
+}
+@mixin _sm {
+    @media (min-width: 576px) and (max-width: 767.98px){
+        @content;
+    }
+}
+@mixin _md {
+    @media (min-width: 768px) and (max-width: 991.98px){
+        @content;
+    }
+}
+@mixin _md_lg {
+    @media (min-width: 768px) and (max-width: 1199.98px){
+        @content;
+    }
+}
+@mixin _lg {
+    @media (min-width: 992px) and (max-width: 1199.98px){
+        @content;
+    }
+}
+@mixin _xl {
+    @media (min-width: 1200px) and (max-width: 1399.98px){
+        @content;
+    }
+}
+@mixin _xxl {
+    @media (min-width: 1440px){
+        @content;
+    }
+}
+

@@ -1,0 +1,226 @@
+.drop-down-faq-block{
+    width: 100%;
+    padding: 25px 0;
+    margin-top: -1px;
+    position: relative;
+    background-color: white;
+    @include laptop{
+        padding: 46px 0;
+    }
+    .container{
+        .section-title,.section-description{
+            max-width: 100%;
+            @include tablet{
+
+            }
+        }
+        .section-title{
+            color: $main-1;
+            text-align: left;
+        }
+        .section-description{
+            margin-bottom: 64px;
+            text-align: left;
+            color:#475467;
+
+        }
+        .drop-down-rows {
+            display: block;
+            @include laptop{
+                column-gap: 24px;
+                row-gap: 24px;
+                padding: 20px;
+                display: grid;
+            }
+            .drop-down-row {
+
+                .cols {
+                    display: block;
+                    @include laptop{
+                        column-gap: 24px;
+                        row-gap: 24px;
+                        display: grid;
+                    }
+
+
+                    .col {
+                        background-color: $white;
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 48px;
+                        height: fit-content;
+
+                        .drop-down-info {
+                            display: flex;
+                            align-items: flex-start;
+                            margin-bottom: 0px;
+                            @include laptop{
+                                display: flex;
+                                align-items: flex-start;
+                                margin-bottom: 0px;
+                            }
+                            &::after{
+                                content: '';
+                                margin-left: auto;
+                                margin-right: 0px;
+                                margin-top: 20px;
+                                width: 32px;
+                                height: 16px;
+                                display: inline-block;
+                                background-image: url("../../assets/images/icon-arrow-down.svg");
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                @include laptop{
+                                    margin-right: 8px;
+                                }
+                            }
+                            .col-icon {
+                                width: 56px;
+                                height: 56px;
+                                margin-right: 33px;
+                            }
+
+                            .col-title {
+                                display: none;
+                                margin-top: 10px;
+                                @include laptop{
+                                    font-size: rem(30);
+                                    line-height: rem(38);
+                                    font-weight: 700;
+                                    color: $main-1;
+                                    margin-bottom: 8px;
+                                    display: block;
+                                    width: 80%;
+                                }
+                            }
+
+                            .col-drop-icon {
+                                content: '';
+                                margin-left: auto;
+                                margin-right: 0px;
+                                width: 32px;
+                                height: 16px;
+                                display: inline-block;
+                                background-image: url("../../assets/images/icon-arrow-down.svg");
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                @include laptop{
+                                    margin-right: 8px;
+                                }
+                                .active{
+                                    background-image: url("../../assets/images/icon-arrow-up.png");
+                                }
+
+                            }
+
+                        }
+                        .active {
+                            margin-bottom: 28px;
+                            &::after{
+                                content: '';
+                                margin-left: auto;
+                                margin-right: 0px;
+                                width: 32px;
+                                height: 16px;
+                                margin-top: 20px;
+                                display: inline-block;
+                                background-image: url("../../assets/images/icon-arrow-up.svg");
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                @include laptop{
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+
+                        .col-title-mobile{
+                            margin-top: 28px;
+                            font-size: rem(30);
+                            line-height: rem(38);
+                            font-weight: 700;
+                            color: $main-1;
+                            margin-bottom: 8px;
+                            @include laptop{
+                                display: none;
+                            }
+                        }
+                        .drop-down-content{
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+                            ul{
+                                li{
+                                    display: list-item;
+                                    list-style-position: inside;
+                                    list-style-type: disc;
+                                }
+                                .list-item{
+                                    margin-left: 20px;
+                                }
+                            }
+                            .col-description {
+                                font-size: rem(16);
+                                font-weight: 400;
+                                color: $gray-6;
+                                line-height: rem(24);
+                                margin-bottom: 18px;
+                            }
+                            .col-link {
+                                margin-top: 20px;
+                                font-size: rem(16);
+                                line-height: rem(24);
+                                color: $main-1;
+                                font-weight: 700;
+
+                                &::after {
+                                    content: '';
+                                    margin-left: 8px;
+                                    width: 11.67px;
+                                    height: 11.67px;
+                                    display: inline-block;
+                                    background-image: url("../../assets/images/icon-arrow.svg");
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .one {
+                    grid-template-columns: 1fr;
+                }
+                .two{
+                    @include tablet {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+                .box{
+                    .col {
+                        box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+                        border-radius: 16px;
+                    }
+                }
+                .no-box{
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+.gray{
+    background-color:$gray-5;
+}
+.white{
+    background-color: $white;
+}
+.blue{
+    background-color: $blue-8;
+}

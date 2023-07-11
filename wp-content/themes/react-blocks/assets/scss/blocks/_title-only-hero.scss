@@ -1,0 +1,77 @@
+.title-only-hero {
+    width:100%;
+    position:relative;
+    padding: 65px 0 135px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include tablet {
+        padding:  24px 0px 238px 0px;
+    }
+    @include laptop {
+        padding: 65px 0 115px 0;
+    }
+    @include full-width{
+        padding: 85px 0 145px 0;
+    }
+    @include full-width-xl{
+        padding: 95px 0 195px 0;
+    }
+    @include big-desktop{
+        padding: 13rem 0;
+    }
+    .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .page-title,
+        .page-description {
+            color:$white;
+            text-align: center;
+        }
+        .not-found{
+            margin-bottom: 48px;
+        }
+        .not-found-button-wrap{
+            text-align: center;
+            padding: 24px;
+            .not-found-button{
+                background-color: #A4CD39;
+                color: #ffffff;
+                padding: 12px 48px;
+            }
+        }
+    }
+
+}
+.short-right{
+    background-image: url("../../assets/images/small-hero-section-bg-3-mobile.svg");
+    @include tablet{
+        background-image: url("../../assets/images/small-hero-section-bg-3.svg");
+    }
+
+}
+.short-left{
+    background-image: url("../../assets/images/small-hero-section-bg-1-mobile.svg");
+    @include tablet{
+        background-image: url("../../assets/images/small-hero-section-bg-1.svg");
+    }
+}
+.long-right{
+    background-image: url("../../assets/images/small-hero-section-bg-4-mobile.svg");
+    @include tablet{
+        background-image: url("../../assets/images/small-hero-section-bg-4.svg");
+    }
+}
+.long-left{
+    background-image: url("../../assets/images/small-hero-section-bg-2-mobile.svg");
+    @include tablet{
+        background-image: url("../../assets/images/small-hero-section-bg-2.svg");
+    }
+}
+.centered{
+    background-image: url("../../assets/images/small-hero-section-bg-5-mobile.svg");
+    @include tablet{
+        background-image: url("../../assets/images/small-hero-section-bg-5.svg");
+    }
+}

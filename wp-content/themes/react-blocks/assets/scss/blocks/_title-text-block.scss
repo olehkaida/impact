@@ -1,0 +1,99 @@
+.title-text-block{
+    width:100%;
+    margin-top: -1px;
+    position: relative;
+    display: flex;
+    padding: 96px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    //background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
+    background-color: #FFF;
+    border-top: 1px solid #EAECF0;
+    @include laptop{
+        padding: 96px 0;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        padding: 0px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            align-self: stretch;
+            .heading-suport-text{
+                display: flex;
+                max-width: 736px;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .headind-subheading{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+                    align-self: stretch;
+                    .section-pretitle{
+                        display: flex;
+                        flex-direction: column;
+                        align-self: stretch;
+
+                        color: var(--primary-700, #BE3E43);
+                        text-align: center;
+
+                        /* Text md/Semibold */
+                        font-size: 16px;
+                        font-family: Greycliff CF;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                    .section-title{
+                        display: flex;
+                        flex-direction: column;
+                        align-self: stretch;
+                        color: var(--gray-900, #1F2334);
+                        text-align: center;
+
+                        /* Display md/Heavy */
+                        font-size: 36px;
+                        font-family: Greycliff CF;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 44px;
+                        letter-spacing: -0.72px;
+                    }
+                }
+                .section-description{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: stretch;
+                    color: var(--gray-600, #475467);
+                    text-align: center;
+
+                    /* Text xl/Regular */
+                    font-size: 20px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+                ul{
+                    li{
+                        display: list-item;
+                        list-style-position: inside;
+                        list-style-type: disc;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

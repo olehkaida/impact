@@ -1,0 +1,18 @@
+/*.
+* editor-styles-wrapper converter body to $class
+*/
+body {
+    background-color: #c9e5f0;
+}
+
+.wp-block {
+    max-width: 800px;
+}
+
+.wp-block[data-align=full]{
+    max-width: none;
+}
+
+.wp-block[data-align=wide]{
+    max-width: 1000px;
+}
