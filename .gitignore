@@ -1,0 +1,7 @@
+node_modules/
+wp-config.php
+*.mp4
+uploads
+*.zip
+*.rar
+/wp-content/debug.log
