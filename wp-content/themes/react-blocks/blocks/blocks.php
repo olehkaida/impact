@@ -112,4 +112,12 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'left-rigth-bullet-image-block' => [
+    'name' => 'left-rigth-bullet-image-block',
+    'title' => ('Left Right Bullet-image Block'),
+    'description' => ('Left Right Bullet-image Block'),
+    'render_callback' => 'render_acf_block_callback',
+    'category' => 'happen-blocks',
+    'icon' => 'block-default',
+],
 ];
