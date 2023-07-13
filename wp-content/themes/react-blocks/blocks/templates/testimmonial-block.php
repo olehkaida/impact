@@ -39,7 +39,7 @@ $name = get_field('name');
                 <div class="avatar-text">
                     <img class="testimonial-image" src="<?php echo $avatar['url'] ?>"
                          alt="<?php echo $avatar['alt'] ?>">
-                    <div class="testimonials-info">
+                    <div class="testimonial-info">
                         <p class="testimonial-name"><?php echo($name); ?></p>
                         <p class="testimonial-title"><?php echo($title); ?></p>
                     </div>
