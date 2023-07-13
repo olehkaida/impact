@@ -4360,7 +4360,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 .testimmonial_block .container .content .attribution .avatar-text .testimonial-info {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	gap: 4px;
 	align-self: stretch;
 }
