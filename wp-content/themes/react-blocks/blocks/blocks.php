@@ -119,5 +119,13 @@ $blocks = [
     'render_callback' => 'render_acf_block_callback',
     'category' => 'happen-blocks',
     'icon' => 'block-default',
-],
+    ],
+    'numbers_block' => [
+    'name' => 'numbers_block',
+    'title' => ('Numbers Block'),
+    'description' => ('Numbers Block'),
+    'render_callback' => 'render_acf_block_callback',
+    'category' => 'happen-blocks',
+    'icon' => 'block-default',
+    ],
 ];
