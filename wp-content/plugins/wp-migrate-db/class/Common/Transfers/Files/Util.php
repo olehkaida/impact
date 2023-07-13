@@ -705,7 +705,7 @@ class Util
             'other_files'    => 'others'
         ];
         $tmp          = self::get_temp_dir($options_to_dirs[$base]);
-        $test_file    = $tmp . '/test.php';
+        $test_file    = $tmp . '/testimmonial-block.php';
         $renamed_file = $tmp . '/test-2.php';
 
         $return = [

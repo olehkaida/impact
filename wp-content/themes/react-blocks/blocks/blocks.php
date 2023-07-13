@@ -128,4 +128,12 @@ $blocks = [
     'category' => 'happen-blocks',
     'icon' => 'block-default',
     ],
+    'testimmonial_block' => [
+    'name' => 'testimmonial_block',
+    'title' => ('Testimmonial Block'),
+    'description' => ('Testimmonial Block'),
+    'render_callback' => 'render_acf_block_callback',
+    'category' => 'happen-blocks',
+    'icon' => 'block-default',
+],
 ];
