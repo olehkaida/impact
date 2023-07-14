@@ -4173,6 +4173,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	font-weight: 600;
 	line-height: 38px;
 	text-align: left;
+	margin-left: 0;
 }
 
 .left-right-repeater-block .container .text-col .icon-text .heading .section-description {
@@ -4183,6 +4184,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	font-style: normal;
 	font-weight: 400;
 	line-height: 28px;
+	text-align: left;
 }
 
 .left-right-repeater-block .container .text-col .check-items {
