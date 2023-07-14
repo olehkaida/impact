@@ -7,8 +7,8 @@
     flex-direction: column;
     align-items: center;
     gap: 96px;
-    //background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
-    background-color: #FFF;
+    background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
+
     border-top: 1px solid #EAECF0;
     @include laptop{
         padding: 96px 0;

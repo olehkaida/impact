@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 96px;
+    background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
     .container {
         display: flex;
         width: 100%;
