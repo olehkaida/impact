@@ -162,12 +162,11 @@ function updateScreenWidthCookie() {
 // Add event listener for beforeunload event
 window.addEventListener('beforeunload', updateScreenWidthCookie);
 
-
 const easeInOutQuad = (t) => t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 
 const inViewportCounter = (el) => {
 
-	const duration = +el.dataset.duration || 2000;
+	const duration = +el.dataset.duration || 3000;
 	const start = +el.textContent || 0;
 	const end = +el.dataset.count || 0;
 	let raf;
@@ -212,3 +211,5 @@ const inViewportCounter = (el) => {
 	// Attach observer to element:
 	Obs.observe(el, obsOptions);
 };
+
+document.querySelectorAll('[data-count]').forEach(inViewportCounter);
