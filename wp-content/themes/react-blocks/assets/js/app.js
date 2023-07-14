@@ -212,5 +212,3 @@ const inViewportCounter = (el) => {
 	// Attach observer to element:
 	Obs.observe(el, obsOptions);
 };
-
-document.querySelectorAll('[data-count]').forEach(inViewportCounter);

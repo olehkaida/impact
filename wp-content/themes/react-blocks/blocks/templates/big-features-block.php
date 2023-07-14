@@ -12,9 +12,9 @@
  */
 
 // Support custom "anchor" values.
-$anchor = '';
-if (!empty($block['anchor'])) {
-    $anchor = 'id="' . esc_attr($block['anchor']) . '" ';
+$anchor = 'overview';
+if (!empty($anchor)) {
+    $anchor = 'id="' . esc_attr($anchor) . '" ';
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
@@ -32,7 +32,7 @@ $image = get_field('image');
 $features = get_field('features');
 ?>
 
-<div <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
+<div <?php echo $anchor; ?> class="<?php echo esc_attr($class_name); ?>">
     <div class="container <?php if ($align) echo " " . $align; ?>">
         <div class="content-pretitle-title-description">
             <div class="content-heading-suporting-text">
