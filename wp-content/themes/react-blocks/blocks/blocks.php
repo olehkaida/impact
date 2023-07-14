@@ -120,6 +120,14 @@ $blocks = [
     'category' => 'happen-blocks',
     'icon' => 'block-default',
     ],
+    'left-right-repeater-block' => [
+        'name' => 'left-right-repeater-block',
+        'title' => ('Left Right Repeater Block'),
+        'description' => ('Left Right Repeater Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'numbers_block' => [
     'name' => 'numbers_block',
     'title' => ('Numbers Block'),
