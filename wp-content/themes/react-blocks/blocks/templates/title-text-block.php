@@ -31,7 +31,7 @@ $description = get_field('description');
 
 ?>
 <div <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
-    <div class="container">
+    <div class="container-bg">
         <div class="content">
             <div class="heading-suport-text">
                 <div class="headind-subheading">

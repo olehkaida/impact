@@ -1,0 +1,105 @@
+.team-block{
+    display: flex;
+    padding: 96px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+    background: var(--gray-50, #F9F8F7);
+    .container{
+        display: flex;
+        max-width: 1280px;
+        padding: 0px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 64px;
+        .cols{
+            gap: 32px;
+            align-self: stretch;
+            .col{
+                display: flex;
+                max-width: 280px;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                flex: 1 0 0;
+                .col-image {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                    align-self: stretch;
+
+                    .col-avatar {
+                        border-radius: 48px;
+                                            }
+                }
+                .col-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                    align-self: stretch;
+                    .col-info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 16px;
+                        align-self: stretch;
+                        .col-title{
+                            color: var(--gray-900, #1F2334);
+                            text-align: center;
+
+                            /* Text xl/Bold */
+                            font-family: Greycliff CF;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 30px; /* 150% */
+                        }
+                        .col-description{
+                            color: var(--primary-700, #BE3E43);
+                            text-align: center;
+
+                            /* Text lg/Regular */
+                            font-family: Greycliff CF;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 28px; /* 155.556% */
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+        .one {
+            grid-template-columns: 1fr;
+        }
+        .two{
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .three{
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include laptop {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        .four{
+            @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include desktop {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+    }
+}
+

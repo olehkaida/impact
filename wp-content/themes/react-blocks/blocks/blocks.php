@@ -112,10 +112,10 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
-    'left-rigth-bullet-image-block' => [
-    'name' => 'left-rigth-bullet-image-block',
-    'title' => ('Left Right Bullet-image Block'),
-    'description' => ('Left Right Bullet-image Block'),
+    'number-image-block' => [
+    'name' => 'number-image-block',
+    'title' => ('Number Image Block'),
+    'description' => ('Number Image Block'),
     'render_callback' => 'render_acf_block_callback',
     'category' => 'happen-blocks',
     'icon' => 'block-default',
@@ -143,5 +143,13 @@ $blocks = [
     'render_callback' => 'render_acf_block_callback',
     'category' => 'happen-blocks',
     'icon' => 'block-default',
-],
+    ],
+    'team_block' => [
+    'name' => 'team_block',
+    'title' => ('Team Block'),
+    'description' => ('Team Block'),
+    'render_callback' => 'render_acf_block_callback',
+    'category' => 'happen-blocks',
+    'icon' => 'block-default',
+    ],
 ];

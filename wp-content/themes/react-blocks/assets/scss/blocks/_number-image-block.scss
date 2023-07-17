@@ -1,0 +1,206 @@
+.number-image-block{
+    display: flex;
+    max-width: 1440px;
+    padding: 96px 32px;
+    //padding-bottom: 96px;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    //background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 0px 32px;
+        align-items: center;
+        gap: 96px;
+        .text-col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 64px;
+            flex: 1 0 0;
+
+            .icon-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                align-self: stretch;
+
+                .section-pretitle {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: stretch;
+
+                    color: var(--primary-700, #BE3E43);
+                    text-align: left;
+
+                    /* Text md/Semibold */
+                    font-family: Greycliff CF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px; /* 150% */
+                }
+
+                .heading {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    align-self: stretch;
+
+                    .section-title {
+                        color: var(--gray-900, #1F2334);
+
+                        /* Display lg/Heavy */
+                        font-family: Greycliff CF;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 60px; /* 125% */
+                        letter-spacing: -0.96px;
+                        text-align: left;
+                        margin-left: 0;
+                    }
+
+                    .section-description {
+                        color: var(--gray-600, #475467);
+
+                        /* Text lg/Regular */
+                        font-family: Greycliff CF;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+                }
+            }
+
+            .cols {
+                display: grid;
+                max-width: 1280px;
+                flex-direction: column;
+                align-items: start;
+
+                .col-wrap {
+                    display: grid;
+                    align-items: center;
+                    row-gap: 48px;
+                    //gap: 32px;
+                    .col {
+                        display: grid;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+                        //flex: 1 0 0;
+                        min-width: 250px;
+                        //padding: 0 16px;
+
+                        //border-right: 1px solid #EAECF0;
+                        //&:last-of-type{
+                        //    border:none;
+                        //}
+
+                        .col-info {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 12px;
+                            align-self: stretch;
+
+                            .col-title {
+                                color: var(--primary-600, #EE4E54);
+                                text-align: center;
+                                //margin: 0 auto;
+
+                                /* Display xl/Heavy */
+                                font-family: Greycliff CF;
+                                font-size: 60px;
+                                font-style: normal;
+                                font-weight: 900;
+                                line-height: 72px; /* 120% */
+                                letter-spacing: -1.2px;
+                            }
+
+                            .col-description {
+                                //margin: 0 auto;
+                                color: var(--gray-900, #1F2334);
+                                text-align: left;
+                                font-family: Greycliff CF;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .one {
+                //grid-template-columns: 1fr;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .two {
+                @include tablet {
+                    //grid-template-columns: 1fr 1fr;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+            }
+
+            .three {
+                @include tablet {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @include laptop {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            .four {
+                @include tablet {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @include desktop {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        }
+        .features-image{
+            width: 100%;
+            //max-width: 461px;
+            display: flex;
+            //height: 512px;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1 0 0;
+            border-radius: 48px;
+            //background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+            /* Shadow/2xl */
+            box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+            @include laptop {
+                //max-width: 528px;
+            }
+
+        }
+    }
+    .left {
+        flex-direction: row;
+        //margin-left: 0px;
+        //padding-left: 0px;
+        .features-image{
+        }
+    }
+    .right{
+        flex-direction: row-reverse;
+        //margin-right: 0px;
+        //padding-right: 0px;
+        .features-image{
+        }
+    }
+}
