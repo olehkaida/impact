@@ -35,7 +35,7 @@ $description = get_field('description');
         <div class="content">
             <div class="heading-suport-text">
                 <div class="headind-subheading">
-                    <?php if ($title) { ?>
+                    <?php if ($pretitle) { ?>
                         <div class="section-pretitle"><?php echo($pretitle); ?></div>
                     <?php } ?>
                     <?php if ($title) { ?>
