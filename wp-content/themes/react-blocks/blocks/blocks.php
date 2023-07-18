@@ -160,4 +160,12 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'gallery-image-block' => [
+        'name' => 'gallery-image-block',
+        'title' => ('Gallery Image Block'),
+        'description' => ('Gallery Image Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
 ];
