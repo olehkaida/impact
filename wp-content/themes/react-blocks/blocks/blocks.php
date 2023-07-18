@@ -152,4 +152,12 @@ $blocks = [
     'category' => 'happen-blocks',
     'icon' => 'block-default',
     ],
+    'leadership_block' => [
+        'name' => 'leadership_block',
+        'title' => ('Leadership Block'),
+        'description' => ('Leadership Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
 ];
