@@ -41,10 +41,13 @@
         width: 100%;
         max-width: 1280px;
         display: flex;
-        padding: 0px 32px;
+        padding: 0px 16px;
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
+        @include laptop{
+            padding: 0px 32px;
+        }
         .content{
             display: flex;
             flex-direction: column;
@@ -126,9 +129,12 @@
     .container {
         display: flex;
         width: 100%;
-        padding: 0px 32px;
+        padding: 0px 16px;
         align-items: center;
         gap: 96px;
+        @include laptop{
+            padding: 0px 32px;
+        }
         .text-col{
             display: flex;
             flex-direction: column;

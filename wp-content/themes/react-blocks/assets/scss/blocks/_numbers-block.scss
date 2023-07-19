@@ -73,9 +73,12 @@
         .cols{
             display: flex;
             max-width: 1280px;
-            padding: 0px 32px;
+            padding: 0px 16px;
             flex-direction: column;
             align-items: center;
+            @include laptop{
+                padding: 0px 32px;
+            }
             .col-wrap{
                 display: flex;
                 align-items: flex-start;

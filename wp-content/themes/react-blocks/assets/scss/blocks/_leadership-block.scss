@@ -16,9 +16,12 @@
     .container {
         display: flex;
         width: 100%;
-        padding: 0px 32px;
+        padding: 0px 16px;
         align-items: flex-start;
         gap: 64px;
+        @include laptop{
+            padding: 0px 32px;
+        }
         .text-col {
             display: flex;
             flex-direction: column;
