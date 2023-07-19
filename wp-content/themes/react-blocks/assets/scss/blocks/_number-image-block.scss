@@ -198,14 +198,20 @@
         }
     }
     .left {
-        flex-direction: row;
+        flex-direction: column;
+        @include laptop{
+            flex-direction: row;
+        }
         //margin-left: 0px;
         //padding-left: 0px;
         .features-image{
         }
     }
     .right{
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        @include laptop{
+            flex-direction: row-reverse;
+        }
         //margin-right: 0px;
         //padding-right: 0px;
         .features-image{

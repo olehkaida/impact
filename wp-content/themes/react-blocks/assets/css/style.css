@@ -4084,11 +4084,23 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 }
 
 .number-image-block .left {
-	flex-direction: row;
+	flex-direction: column;
+}
+
+@media (min-width: 993px) {
+	.number-image-block .left {
+		flex-direction: row;
+	}
 }
 
 .number-image-block .right {
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
+}
+
+@media (min-width: 993px) {
+	.number-image-block .right {
+		flex-direction: row-reverse;
+	}
 }
 
 .numbers-block {
@@ -4428,7 +4440,13 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 
 .team-block .container .cols {
 	gap: 32px;
-	align-self: stretch;
+	align-self: center;
+}
+
+@media (min-width: 993px) {
+	.team-block .container .cols {
+		align-self: stretch;
+	}
 }
 
 .team-block .container .cols .col {

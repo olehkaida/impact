@@ -19,7 +19,10 @@
         gap: 64px;
         .cols{
             gap: 32px;
-            align-self: stretch;
+            align-self: center;
+            @include laptop{
+                align-self: stretch;
+            }
             .col{
                 display: flex;
                 max-width: 280px;
