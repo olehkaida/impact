@@ -34,6 +34,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+.post,
+.page {
+	margin: 0;
+}
+
 p iframe {
 	margin: 0px auto;
 	display: flex;
@@ -45,6 +50,26 @@ p iframe {
 	margin-top: -1px;
 	position: relative;
 	background-color: white;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: 4px;
+	scrollbar-color: #EE4E54 #EEECEA;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #EEECEA;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #EE4E54;
 }
 
 /* Colors */
@@ -4723,6 +4748,164 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 }
 
 .gallery-image-block .right {
+	flex-direction: row-reverse;
+}
+
+.image-scroll-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 64px;
+}
+
+.image-scroll-block .container .content-pretitle-title-description {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 48px;
+	align-self: stretch;
+}
+
+.image-scroll-block .container .content-pretitle-title-description .content-heading-suporting-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.image-scroll-block .container .content-pretitle-title-description .content-heading-suporting-text .heading {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.image-scroll-block .container .content-pretitle-title-description .content-heading-suporting-text .heading .section-pretitle {
+	display: flex;
+	flex-direction: column;
+	color: var(--primary-600, #EE4E54);
+	/* Text md/Semibold */
+	font-size: 16px;
+	font-family: Greycliff CF;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.image-scroll-block .container .content-pretitle-title-description .content-heading-suporting-text .heading .section-title {
+	color: var(--gray-900, #1F2334);
+	text-align: center;
+	/* Display lg/Heavy */
+	font-family: Greycliff CF;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 60px;
+	/* 125% */
+	letter-spacing: -0.96px;
+}
+
+.image-scroll-block .container .content-pretitle-title-description .content-heading-suporting-text .section-description {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	color: var(--gray-600, #475467);
+	/* Text xl/Regular */
+	font-size: 20px;
+	font-family: Greycliff CF;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.image-scroll-block .container .features-content {
+	display: flex;
+	max-width: 1280px;
+	align-items: center;
+	margin-top: 64px;
+}
+
+.image-scroll-block .container .features-content .features-image {
+	display: flex;
+	width: 100%;
+	object-fit: contain;
+	max-width: 50%;
+}
+
+.image-scroll-block .container .features-content .scrollbar {
+	float: left;
+	height: 360px;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+	direction: rtl;
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list {
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+	align-items: flex-start;
+	direction: ltr;
+}
+
+@media (min-width: 993px) {
+	.image-scroll-block .container .features-content .scrollbar .features-list {
+		max-width: 624px;
+	}
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	align-self: stretch;
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-icon {
+	width: 48px;
+	height: 48px;
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col {
+	display: flex;
+	padding: 16px 0px 16px 24px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	align-self: stretch;
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 8px;
+	align-self: stretch;
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description .feature-title {
+	color: var(--gray-900, #1F2334);
+	/* Text xl/Semibold */
+	font-family: Greycliff CF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	/* 150% */
+}
+
+.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description .feature-description {
+	color: var(--gray-600, #475467);
+	/* Text md/Regular */
+	font-size: 16px;
+	font-family: Greycliff CF;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.image-scroll-block .right .features-content {
 	flex-direction: row-reverse;
 }
 

@@ -8,11 +8,16 @@ html{
     font-weight: 400;
     scroll-behavior: smooth;
 }
+.post,
+.page {
+    margin: 0;
+}
 
 p iframe {
     margin: 0px auto;
     display: flex;
 }
+
 
 .not-found-empty{
     width: 100%;
@@ -20,5 +25,25 @@ p iframe {
     margin-top: -1px;
     position: relative;
     background-color: white;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: 4px;
+    scrollbar-color: #EE4E54 #EEECEA;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #EEECEA;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #EE4E54;
 }
 

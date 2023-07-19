@@ -168,4 +168,12 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'image-scroll-block' => [
+        'name' => 'image-scroll-block',
+        'title' => ('Image Scroll Block'),
+        'description' => ('Image Scroll Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
 ];

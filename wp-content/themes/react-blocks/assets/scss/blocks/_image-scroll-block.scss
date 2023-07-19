@@ -1,0 +1,149 @@
+.image-scroll-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    .container{
+        .content-pretitle-title-description{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 48px;
+            align-self: stretch;
+            .content-heading-suporting-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .heading{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+                    .section-pretitle{
+                        display: flex;
+                        flex-direction: column;
+
+                        color: var(--primary-600, #EE4E54);
+
+                        /* Text md/Semibold */
+                        font-size: 16px;
+                        font-family: Greycliff CF;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                    }
+                    .section-title{
+                        color: var(--gray-900, #1F2334);
+                        text-align: center;
+
+                        /* Display lg/Heavy */
+                        font-family: Greycliff CF;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: 60px; /* 125% */
+                        letter-spacing: -0.96px;
+                    }
+                }
+                .section-description{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+
+                    color: var(--gray-600, #475467);
+
+                    /* Text xl/Regular */
+                    font-size: 20px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+        }
+        .features-content{
+            display: flex;
+            max-width: 1280px;
+            align-items: center;
+            margin-top: 64px;
+            @include laptop{
+            }
+            .features-image{
+                display: flex;
+                width:100%;
+                object-fit: contain;
+                max-width: 50%;
+            }
+            .scrollbar{
+                float: left;
+                height: 360px;
+                overflow-y: scroll;
+                margin-bottom: 25px;
+                direction: rtl;
+                .features-list {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    display: flex;
+                    align-items: flex-start;
+                    direction: ltr;
+                    @include laptop{
+                        max-width: 624px;
+                    }
+                    .feature{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 16px;
+                        align-self: stretch;
+                        .feature-icon{
+                            width: 48px;
+                            height: 48px;
+                        }
+                        .feature-col{
+                            display: flex;
+                            padding: 16px 0px 16px 24px;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 20px;
+                            align-self: stretch;
+                            .content-title-description{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                gap: 8px;
+                                align-self: stretch;
+                                .feature-title{
+                                    color: var(--gray-900, #1F2334);
+
+                                    /* Text xl/Semibold */
+                                    font-family: Greycliff CF;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 30px; /* 150% */
+                                }
+                                .feature-description{
+                                    color: var(--gray-600, #475467);
+
+                                    /* Text md/Regular */
+                                    font-size: 16px;
+                                    font-family: Greycliff CF;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .right{
+        .features-content{
+            flex-direction: row-reverse;
+        }
+    }
+}
