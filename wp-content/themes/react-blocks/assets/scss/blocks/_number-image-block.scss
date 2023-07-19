@@ -1,12 +1,16 @@
 .number-image-block{
     display: flex;
     max-width: 1440px;
-    padding: 96px 32px;
+    padding: 48px 32px;
     //padding-bottom: 96px;
     flex-direction: column;
     align-items: center;
-    gap: 96px;
+    gap: 48px;
     //background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
+    @include laptop{
+        gap: 96px;
+        padding: 96px 32px;
+    }
     .container {
         display: flex;
         width: 100%;
@@ -55,13 +59,17 @@
 
                         /* Display lg/Heavy */
                         font-family: Greycliff CF;
-                        font-size: 48px;
+                        font-size: 30px;
                         font-style: normal;
                         font-weight: 900;
-                        line-height: 60px; /* 125% */
+                        line-height: 38px; /* 125% */
                         letter-spacing: -0.96px;
                         text-align: left;
                         margin-left: 0;
+                        @include laptop{
+                            font-size: 48px;
+                            line-height: 60px; /* 125% */
+                        }
                     }
 
                     .section-description {

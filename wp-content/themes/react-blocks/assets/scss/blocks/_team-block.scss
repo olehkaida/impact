@@ -1,11 +1,15 @@
 .team-block{
     display: flex;
-    padding: 96px 0px;
+    padding: 48px 0px;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 32px;
     align-self: stretch;
     background: var(--gray-50, #F9F8F7);
+    @include laptop{
+        gap: 64px;
+        padding: 96px 0px;
+    }
     .container{
         display: flex;
         max-width: 1280px;

@@ -1,11 +1,12 @@
 .big-features{
     display: flex;
-    padding: 96px 0px;
+    padding: 48px 0px;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 32px;
     @include laptop{
         padding: 96px 0;
+        gap: 64px;
     }
     .container{
         .content-pretitle-title-description{
@@ -45,12 +46,16 @@
                         color: var(--gray-900, #1F2334);
 
                         /* Display md/Heavy */
-                        font-size: 36px;
+                        font-size: 30px;
                         font-family: Greycliff CF;
                         font-style: normal;
                         font-weight: 900;
-                        line-height: 44px;
+                        line-height: 38px;
                         letter-spacing: -0.72px;
+                        @include laptop{
+                            font-size: 36px;
+                            line-height: 44px; /* 125% */
+                        }
                     }
                 }
                 .section-description{

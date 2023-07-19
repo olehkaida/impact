@@ -33,7 +33,7 @@ $features = get_field('features');
 ?>
 
 <div <?php echo $anchor; ?> class="<?php echo esc_attr($class_name); ?>">
-    <div class="container <?php if ($align) echo " " . $align; ?>">
+    <div class="container">
         <div class="content-pretitle-title-description">
             <div class="content-heading-suporting-text">
                 <div class="heading">
@@ -45,7 +45,7 @@ $features = get_field('features');
                 <?php } ?>
             </div>
         </div>
-        <div class="features-content flex">
+        <div class="features-content <?php if ($align) echo " " . $align; ?> flex">
             <img src="<?php echo $image["url"] ?>" alt="<?php echo $image["alt"] ?>" class="features-image">
             <div class="scrollbar">
                 <div class="features-list flex ">

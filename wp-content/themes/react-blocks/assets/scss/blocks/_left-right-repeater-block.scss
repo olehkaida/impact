@@ -3,15 +3,16 @@
     margin-top: -1px;
     position: relative;
     display: flex;
-    padding-bottom: 96px;
+    padding-bottom: 48px;
     flex-direction: column;
     align-items: center;
-    gap: 96px;
+    gap: 48px;
     background: var(--gradient-2, linear-gradient(202deg, #FFF 0%, #EEECEA 100%));
 
     border: none;
     @include laptop{
         padding-bottom: 96px;
+        gap: 96px;
     }
 
     .section-divider-feature{
@@ -85,12 +86,16 @@
                         text-align: center;
 
                         /* Display md/Heavy */
-                        font-size: 36px;
+                        font-size: 30px;
                         font-family: Greycliff CF;
                         font-style: normal;
                         font-weight: 900;
-                        line-height: 44px;
+                        line-height: 38px;
                         letter-spacing: -0.72px;
+                        @include laptop{
+                            font-size: 36px;
+                            line-height: 44px; /* 125% */
+                        }
                     }
                 }
                 .section-description{
