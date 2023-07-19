@@ -79,6 +79,12 @@
             .col-wrap{
                 display: flex;
                 align-items: flex-start;
+                flex-direction: column;
+                gap: 32px;
+                @include laptop{
+                    flex-direction: row;
+                    gap: 0px;
+                }
                 //gap: 32px;
                 .col {
                     display: flex;
@@ -88,11 +94,13 @@
                     flex: 1 0 0;
                     min-width: 250px;
                     padding: 0 16px;
-
-                    border-right: 1px solid #EAECF0;
-                    &:last-of-type{
-                        border:none;
+                    @include laptop{
+                        border-right: 1px solid #EAECF0;
+                        &:last-of-type{
+                            border:none;
+                        }
                     }
+
 
                     .col-info {
                         display: flex;

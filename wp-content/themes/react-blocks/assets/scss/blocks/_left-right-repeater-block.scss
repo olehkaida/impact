@@ -243,16 +243,26 @@
         }
     }
     .left {
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin-left: 0px;
         padding-left: 0px;
-        .features-image{
+        @include laptop{
+            flex-direction: row;
+        }
+        .text-col{
+            padding-left: 32px;
+            @include laptop{
+                padding-left: 0px;
+            }
         }
     }
     .right{
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
         margin-right: 0px;
         padding-right: 0px;
+        @include laptop{
+            flex-direction: row-reverse;
+        }
         .features-image{
         }
     }

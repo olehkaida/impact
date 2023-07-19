@@ -1,6 +1,6 @@
 .big-features{
     display: flex;
-    padding: 48px 0px;
+    padding: 96px 0px 48px 0px;
     flex-direction: column;
     align-items: center;
     gap: 32px;
@@ -83,13 +83,10 @@
             @include laptop{
             }
             .features-image{
-                display: none;
-                @include tablet{
-                    display: flex;
-                    width:100%;
-                    border-radius: 48px;
-                    object-fit: contain;
-                }
+                display: flex;
+                width:100%;
+                border-radius: 48px;
+                object-fit: contain;
             }
             .features-list {
                 width: 100%;
@@ -174,10 +171,20 @@
             }
         }
     }
+    .left{
+        .features-content{
+            flex-direction: column;
+            @include laptop{
+                flex-direction: row;
+            }
+        }
+    }
     .right{
         .features-content{
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            @include laptop{
+                flex-direction: row-reverse;
+            }
         }
-
     }
 }

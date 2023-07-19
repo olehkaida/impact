@@ -3,30 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 48px 0 24px 0;
+    gap:48px;
     background: var(--gradient-1, linear-gradient(322deg, #30364A 0%, #1F2334 100%));
 
-    @include phone-lg{
-        padding: 16px;
-    }
-    @include tablet {
-        padding: 16px;
-    }
     @include laptop{
-         padding: 16px;
+        padding: 96px 0 0 0;
+        gap: 96px;
     }
-    @include desktop{
-        padding: 16px;
-    }
-    @include full-width{
-        padding: 16px;
-    }
-    @include full-width-xl{
-        padding: 16px;
-    }
-    @include big-desktop{
-        padding: 16px;
-    }
+
 
 
     .container{
@@ -34,7 +19,7 @@
         max-width: 1280px;
         margin: 0 auto;
         display: flex;
-        padding: 0px 6px;
+        padding: 0px 32px;
         flex-direction: column;
         align-items: center;
         gap: 32px;
@@ -61,12 +46,16 @@
                     text-align: center;
 
                     /* Display 2xl/Heavy */
-                    font-size: 72px;
+                    font-size: 30px;
                     font-family: Greycliff CF;
                     font-style: normal;
                     font-weight: 900;
-                    line-height: 90px;
+                    line-height: 38px;
                     letter-spacing: -1.44px;
+                    @include laptop{
+                        font-size: 72px;
+                        line-height: 90px; /* 125% */
+                    }
                 }
                 .page-description{
                     display: flex;
@@ -77,11 +66,15 @@
                     text-align: center;
 
                     /* Text xl/Regular */
-                    font-size: 20px;
+                    font-size: 16px;
                     font-family: Greycliff CF;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 30px;
+                    line-height: 24px;
+                    @include laptop{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
                 }
             }
             .action-buttons{
@@ -114,7 +107,7 @@
         }
 
         .block-image{
-            margin: 64px auto -64px auto;
+            margin: 32px auto -64px auto;
             border-radius: 36px;
             position: relative;
             display: flex;
@@ -123,14 +116,9 @@
             align-items: center;
             gap: 32px;
             z-index: 1;
-            @include tablet{
-                max-width: 75%;
-            }
             @include laptop{
                 max-width: 75%;
-            }
-            @include big-desktop {
-                max-width: 100%;
+                margin: 64px auto -64px auto;
             }
         }
     }
