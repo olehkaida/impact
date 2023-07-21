@@ -1,7 +1,7 @@
 .number-image-block{
     display: flex;
     max-width: 1440px;
-    padding: 48px 16px;
+    padding: 96px 16px;
     //padding-bottom: 96px;
     flex-direction: column;
     align-items: center;
@@ -93,6 +93,7 @@
                 max-width: 1280px;
                 flex-direction: column;
                 align-items: start;
+                margin: 0 auto;
 
                 .col-wrap {
                     display: grid;
@@ -116,9 +117,12 @@
                         .col-info {
                             display: flex;
                             flex-direction: column;
-                            align-items: flex-start;
+                            align-items: center;
                             gap: 12px;
                             align-self: stretch;
+                            @include laptop{
+                                align-items: flex-start;
+                            }
 
                             .col-title {
                                 color: var(--primary-600, #EE4E54);
@@ -135,7 +139,7 @@
                             }
 
                             .col-description {
-                                //margin: 0 auto;
+                                margin: 0 auto;
                                 color: var(--gray-900, #1F2334);
                                 text-align: left;
                                 font-family: Greycliff CF;
@@ -143,6 +147,9 @@
                                 font-style: normal;
                                 font-weight: 400;
                                 line-height: 28px; /* 155.556% */
+                                @include laptop{
+                                    margin: 0;
+                                }
                             }
                         }
                     }
@@ -189,13 +196,14 @@
             justify-content: flex-end;
             align-items: center;
             flex: 1 0 0;
-            border-radius: 48px;
+            border-radius: 24px;
             //background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 
             /* Shadow/2xl */
             box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
             @include laptop {
                 //max-width: 528px;
+                border-radius: 48px;
             }
 
         }

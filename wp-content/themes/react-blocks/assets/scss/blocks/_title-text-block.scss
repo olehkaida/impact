@@ -22,9 +22,11 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
-        background-image: url("../../assets/images/titlebg.svg");
-        background-repeat: no-repeat;
-        background-position-x: right;
+        @include laptop{
+            background-image: url("../../assets/images/titlebg.svg");
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
         .content{
             display: flex;
             flex-direction: column;

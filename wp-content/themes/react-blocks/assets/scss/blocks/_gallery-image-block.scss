@@ -96,15 +96,83 @@
                 max-width: 600px;
             }
             .row-even {
+                display: none;
+                gap: 16px;
+                justify-content: center;
+                @include laptop{
+                    display: -ms-flexbox; /* IE10 */
+                    display: flex;
+                    -ms-flex-wrap: wrap; /* IE10 */
+                    flex-wrap: wrap;
+                }
+                .gallery-col {
+                    display: flex;
+                    gap: 16px;
+                    .gallery-image-3{
+                        width: 144px;
+                        height: 96px;
+                        @include laptop{
+                            width: 192px;
+                            height: 128px;
+                        }
+                    }
+                    .gallery-image-4{
+                        width: 121px;
+                        height: 180px;
+                        @include laptop{
+                            width: 160px;
+                            height: 240px;
+                        }
+                    }
+                    .gallery-image-5{
+                        width: 144px;
+                        height: 96px;
+                        @include laptop{
+                            width: 192px;
+                            height: 128px;
+                        }
+                    }
+                }
+            }
+            .row-even-mobile {
                 display: -ms-flexbox; /* IE10 */
                 display: flex;
                 -ms-flex-wrap: wrap; /* IE10 */
                 flex-wrap: wrap;
                 gap: 16px;
                 justify-content: center;
+                align-items: flex-start;
+                @include laptop{
+                    display: none;
+                }
                 .gallery-col {
                     display: flex;
                     gap: 16px;
+                    flex-direction: column-reverse;
+                    .gallery-image-3{
+                        width: 144px;
+                        height: 96px;
+                        @include laptop{
+                            width: 192px;
+                            height: 128px;
+                        }
+                    }
+                    .gallery-image-4{
+                        width: 121px;
+                        height: 180px;
+                        @include laptop{
+                            width: 160px;
+                            height: 240px;
+                        }
+                    }
+                    .gallery-image-5{
+                        width: 144px;
+                        height: 96px;
+                        @include laptop{
+                            width: 192px;
+                            height: 128px;
+                        }
+                    }
                 }
             }
             .row-odd {
@@ -118,13 +186,29 @@
                 .gallery-col {
                     display: flex;
                     gap: 16px;
+                    .gallery-image-1{
+                        width: 138px;
+                        height: 138px;
+                        @include laptop{
+                            width: 160px;
+                            height: 160px;
+                        }
+                    }
+                    .gallery-image-2{
+                        width: 137px;
+                        height: 206px;
+                        @include laptop{
+                            width: 160px;
+                            height: 240px;
+                        }
+                    }
                 }
             }
         }
     }
     .left {
         flex-direction: column;
-        @include laptop{
+        @include desktop{
             flex-direction: row;
         }
         //margin-left: 0px;
@@ -134,7 +218,7 @@
     }
     .right{
         flex-direction: column-reverse;
-        @include laptop{
+        @include desktop{
             flex-direction: row-reverse;
         }
         //margin-right: 0px;
@@ -143,3 +227,4 @@
         }
     }
 }
+

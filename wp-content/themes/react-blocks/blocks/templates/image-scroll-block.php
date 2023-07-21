@@ -29,6 +29,7 @@ $pretitle = get_field('pre_title');
 $title = get_field('title');
 $description = get_field('description');
 $image = get_field('image');
+$image_mobile = get_field('image_mobile');
 $features = get_field('features');
 ?>
 
@@ -47,6 +48,7 @@ $features = get_field('features');
         </div>
         <div class="features-content <?php if ($align) echo " " . $align; ?> flex">
             <img src="<?php echo $image["url"] ?>" alt="<?php echo $image["alt"] ?>" class="features-image">
+            <img src="<?php echo $image_mobile["url"] ?>" alt="<?php echo $image_mobile["alt"] ?>" class="features-image-mobile">
             <div class="scrollbar">
                 <div class="features-list flex ">
                 <?php foreach ($features as $feature) { ?>

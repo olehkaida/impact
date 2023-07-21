@@ -25,6 +25,7 @@
 $logo = get_field('logo_image', 'option');
 $logo_mobile = get_field('logo_image_mobile', 'option');
 $nav = get_field('menu', 'option');
+$nav_mobile = get_field('mobile_menu', 'option');
 $login_bnt = get_field('login_button', 'option');
 $sign_up_bnt = get_field('partners_button', 'option');
 $banner_text = get_field('banner_text', 'option');
@@ -89,7 +90,7 @@ $banner_text = get_field('banner_text', 'option');
                 <div id="close" class="close-button"></div>
             </div>
             <div class="mobile-menu-container">
-                <?php foreach ($nav as $link) { ?>
+                <?php foreach ($nav_mobile as $link) { ?>
                     <div class="nav-item">
                         <a href="<?php echo $link['parent_link']['url'] ?>"
                            class="nav-link"><?php echo $link['parent_link']['title'] ?></a>
@@ -115,10 +116,6 @@ $banner_text = get_field('banner_text', 'option');
                         <?php } ?>
                     </div>
                 <?php }; ?>
-            </div>
-            <div class="button-container">
-                <a href="<?php echo $login_bnt; ?>" class="btn btn__md secondary">Log in</a>
-                <a href="<?php echo $sign_up_bnt; ?>" class="btn btn__md primary">Sign up</a>
             </div>
         </div>
     </header><!-- #masthead -->

@@ -80,10 +80,22 @@
             @include laptop{
             }
             .features-image{
-                display: flex;
+                display: none;
                 width:100%;
                 object-fit: contain;
                 @include laptop{
+                    max-width: 50%;
+                    display: flex;
+                    margin-left: 40px;
+                }
+            }
+            .features-image-mobile{
+                display: flex;
+                width:100%;
+                object-fit: contain;
+                border-radius: 24px 24px 0 0;
+                @include laptop{
+                    display: none;
                     max-width: 50%;
                 }
             }
@@ -91,6 +103,7 @@
                 float: left;
                 height: 360px;
                 overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
                 margin-bottom: 25px;
                 direction: rtl;
                 .features-list {
@@ -153,19 +166,20 @@
 
         }
         .right{
-
-                flex-direction: column-reverse;
-                @include laptop{
-                    flex-direction: row-reverse;
-                }
-
+            flex-direction: column-reverse;
+            gap: 64px;
+            @include laptop{
+                flex-direction: row-reverse;
+                gap: 0px;
+            }
         }
         .left {
-                flex-direction: column-reverse;
-                @include laptop{
-                    flex-direction: row;
-                }
-
+            flex-direction: column-reverse;
+            gap: 64px;
+            @include laptop{
+                flex-direction: row;
+                gap: 0px;
+            }
         }
     }
 }

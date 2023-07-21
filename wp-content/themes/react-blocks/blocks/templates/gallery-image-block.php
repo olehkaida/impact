@@ -42,50 +42,67 @@ $image_5 = get_field('image_5');
         <div class="gallery-block">
             <div class="row-odd">
                 <div class="gallery-col">
-                    <div class="gallery-image"
+                    <div id="gallery-image-1"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_1['url'] ?>),
                                  lightgray 50% / cover no-repeat);
-                                 height: <?php echo $image_1['height'] ?>px;
-                                 width: <?php echo $image_1['width'] ?>px;">
+                                 width: 138px;
+                                 height: 138px;
+                                 @media (min-width: 993px){
+                                 width: 160px;
+                                 height: 160px;
+                                 }">
                     </div>
                 </div>
                 <div class="gallery-col">
-                    <div class="gallery-image"
+                    <div class="gallery-image-2"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_2['url'] ?>),
-                                 lightgray 50% / cover no-repeat);
-                                 height: <?php echo $image_2['height'] ?>px;
-                                 width: <?php echo $image_2['width'] ?>px;">
+                                 lightgray 50% / cover no-repeat);">
                     </div>
                 </div>
             </div>
             <div class="row-even">
                 <div class="gallery-col">
-                    <div class="gallery-image"
+                    <div class="gallery-image-3"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_3['url'] ?>),
-                                 lightgray 50% / cover no-repeat);
-                                 height: <?php echo $image_3['height'] ?>px;
-                                 width: <?php echo $image_3['width'] ?>px;">
+                                 lightgray 50% / cover no-repeat);">
                     </div>
                 </div>
                 <div class="gallery-col">
-                    <div class="gallery-image"
+                    <div class="gallery-image-4"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_4['url'] ?>),
-                                 lightgray 50% / cover no-repeat);
-                                 height: <?php echo $image_4['height'] ?>px;
-                                 width: <?php echo $image_4['width'] ?>px;">
+                                 lightgray 50% / cover no-repeat);">
                     </div>
                 </div>
                 <div class="gallery-col">
-                    <div class="gallery-image"
+                    <div class="gallery-image-5"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_5['url'] ?>),
-                                 lightgray 50% / cover no-repeat);
-                                 height: <?php echo $image_5['height'] ?>px;
-                                 width: <?php echo $image_5['width'] ?>px;">
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                </div>
+            </div>
+            <div class="row-even-mobile">
+                <div class="gallery-col">
+                    <div class="gallery-image-4"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_4['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                </div>
+                <div class="gallery-col">
+                    <div class="gallery-image-3"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_3['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                    <div class="gallery-image-5"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_5['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
                     </div>
                 </div>
             </div>
