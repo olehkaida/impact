@@ -5264,43 +5264,39 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	}
 }
 
-.image-scroll-block .container .features-content .scrollbar {
+.image-scroll-block .container .features-content .wrapper {
 	float: left;
 	height: 360px;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 	margin-bottom: 25px;
 	direction: rtl;
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list {
+.image-scroll-block .container .features-content .wrapper #container {
 	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	align-items: flex-start;
+	height: 320px;
+	overflow: auto;
+	position: relative;
+}
+
+.image-scroll-block .container .features-content .wrapper #container .parent {
 	direction: ltr;
+	height: 100%;
+	position: relative;
 }
 
-@media (min-width: 993px) {
-	.image-scroll-block .container .features-content .scrollbar .features-list {
-		max-width: 624px;
-	}
-}
-
-.image-scroll-block .container .features-content .scrollbar .features-list .feature {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature {
 	display: flex;
 	align-items: flex-start;
 	gap: 16px;
 	align-self: stretch;
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-icon {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature .feature-icon {
 	width: 48px;
 	height: 48px;
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature .feature-col {
 	display: flex;
 	padding: 16px 0px 16px 24px;
 	flex-direction: column;
@@ -5309,7 +5305,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	align-self: stretch;
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature .feature-col .content-title-description {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -5317,7 +5313,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	align-self: stretch;
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description .feature-title {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature .feature-col .content-title-description .feature-title {
 	color: var(--gray-900, #1F2334);
 	/* Text xl/Semibold */
 	font-family: Greycliff CF;
@@ -5328,7 +5324,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	/* 150% */
 }
 
-.image-scroll-block .container .features-content .scrollbar .features-list .feature .feature-col .content-title-description .feature-description {
+.image-scroll-block .container .features-content .wrapper #container .parent .feature .feature-col .content-title-description .feature-description {
 	color: var(--gray-600, #475467);
 	/* Text md/Regular */
 	font-size: 16px;
@@ -5363,74 +5359,62 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 }
 
 .image-scroll-block .wrapper {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	background: #FFF;
-	border: 1px #000 solid;
-	margin: 20px auto;
-	padding: 15px;
 	position: relative;
 	width: 100%;
-	height: 600px;
 }
 
 .image-scroll-block #container {
 	width: 100%px;
-	height: 580px;
-	padding: 5px;
-	margin-top: 5px;
 	overflow: auto;
 	position: relative;
 }
 
 .image-scroll-block .ssb_down {
-	background-color: #33ccaa;
+	background-color: #EEECEA;
 	bottom: 0;
 	cursor: pointer;
 	position: absolute;
-	right: 0;
-	border-radius: 10px;
+	left: 0;
+	display: none;
 }
 
 .image-scroll-block .ssb_sb {
-	background-color: #22aabb;
+	background-color: #EE4E54;
 	cursor: pointer;
 	position: absolute;
-	right: 0;
-	border-radius: 10px;
+	left: 0;
 }
 
 .image-scroll-block .ssb_sb_down {
-	background-color: #1199aa;
+	background-color: #EE4E54;
 }
 
 .image-scroll-block .ssb_sb_over {
-	background-color: #33bbcc;
+	background-color: #EE4E54;
 }
 
 .image-scroll-block .ssb_st {
-	background-color: #dedede;
+	background-color: #EEECEA;
 	cursor: pointer;
 	height: 100%;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
-	border-radius: 10px;
 }
 
 .image-scroll-block .ssb_up {
-	background-color: #33ccaa;
+	background-color: #EEECEA;
 	cursor: pointer;
 	position: absolute;
 	right: 0;
 	top: 0;
 	border-radius: 10px;
+	display: none;
 }
 
 .image-scroll-block .parent {
-	font-family: verdana;
 	height: 100%;
-	padding: 10px;
 	position: relative;
 }
 

@@ -214,7 +214,6 @@ const inViewportCounter = (el) => {
 
 document.querySelectorAll('[data-count]').forEach(inViewportCounter);
 
-
 var ssb = {
 	aConts  : [],
 	mouseY : 0,
@@ -351,8 +350,8 @@ var ssb = {
 		for (var i = 0, N = ssb.N; i < N; i++) {
 			var o = ssb.aConts[i];
 			o.ssb_onscroll();
-			o.sb.style.width = o.st.style.width = o.su.style.width = o.su.style.height = o.sd.style.width = o.sd.style.height = o.sw + 'px';
-			o.sb.style.height = Math.ceil(Math.max(o.sw * .5, o.ratio * o.offsetHeight) + 1) + 'px';
+			o.sb.style.width = o.st.style.width = o.su.style.width = o.su.style.height = o.sd.style.width = o.sd.style.height = o.sw + 'px'= '4px';
+			o.sb.style.height = Math.ceil(Math.max(o.sw * .5, o.ratio * o.offsetHeight) + 1) + 'px'= '118px';
 		}
 	},
 	// arrow scrolling
@@ -400,4 +399,5 @@ var ssb = {
 window.onload = function() {
 	ssb.scrollbar('container'); // scrollbar initialization
 }
+
 

@@ -49,29 +49,20 @@ $features = get_field('features');
         <div class="features-content <?php if ($align) echo " " . $align; ?> flex">
             <img src="<?php echo $image["url"] ?>" alt="<?php echo $image["alt"] ?>" class="features-image">
             <img src="<?php echo $image_mobile["url"] ?>" alt="<?php echo $image_mobile["alt"] ?>" class="features-image-mobile">
-            <div class="scrollbar">
-                <div class="features-list flex ">
-                <?php foreach ($features as $feature) { ?>
-                    <div class="feature flex">
-                        <div class="feature-col">
-                            <div class="content-title-description">
-                                <p class="feature-title"><?php echo $feature['title']; ?></p>
-                                <p class="feature-description"><?php echo $feature['description']; ?></p>
+            <div class="wrapper">
+                <div id="container">
+                    <div class="parent">
+                        <?php foreach ($features as $feature) { ?>
+                            <div class="feature flex">
+                                <div class="feature-col">
+                                    <div class="content-title-description">
+                                        <p class="feature-title"><?php echo $feature['title']; ?></p>
+                                        <p class="feature-description"><?php echo $feature['description']; ?></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
-                <?php } ?>
-            </div>
-
-            </div>
-
-        </div>
-
-        <div class="wrapper">
-            <div id="container">
-                <div class="parent">
-                    <h2>Custom scrollbar</h2>
-                    Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text.
                 </div>
             </div>
         </div>
