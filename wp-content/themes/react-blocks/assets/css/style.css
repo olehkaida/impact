@@ -5370,12 +5370,12 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	margin: 20px auto;
 	padding: 15px;
 	position: relative;
-	width: 600px;
+	width: 100%;
 	height: 600px;
 }
 
 .image-scroll-block #container {
-	width: 580px;
+	width: 100%px;
 	height: 580px;
 	padding: 5px;
 	margin-top: 5px;
