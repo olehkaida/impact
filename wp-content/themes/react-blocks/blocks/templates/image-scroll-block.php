@@ -62,7 +62,19 @@ $features = get_field('features');
                     </div>
                 <?php } ?>
             </div>
+
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+            <div id="container">
+                <div class="parent">
+                    <h2>Custom scrollbar</h2>
+                    Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text. Many different text.
+                </div>
             </div>
         </div>
+
     </div>
 </div>
