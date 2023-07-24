@@ -86,7 +86,7 @@
                 gap: 12px;
                 .explore_the_market{
                     display: flex;
-                    padding: 12px 20px;
+                    padding: 16px 28px;
                     justify-content: center;
                     align-items: center;
                     gap: 8px;
@@ -105,6 +105,39 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: 24px;
+                }
+                .demo_button{
+                    display: flex;
+                    padding: 16px 28px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    border-radius: 8px;
+                    color: var(--base-white, #FFF);
+                    border: none;
+                    /* Text md/Semibold */
+                    font-size: 16px;
+                    font-family: Greycliff CF;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    border-radius: 8px;
+                    background: rgba(255, 255, 255, 0.10);
+
+                    /* Shadow/xs */
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                    &::before{
+                        content: '';
+                        margin-right: 12px;
+                        width: 24px;
+                        height: 24px;
+                        display: inline-block;
+                        background-image: url("../../assets/images/play-circle.svg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
                 }
             }
         }

@@ -26,6 +26,7 @@ if (!empty($block['className'])) {
 // Load values and assign defaults.
 $title = get_field('title');
 $description = get_field('description');
+$demo_button = get_field('demo_button');
 $action_button = get_field('action_button');
 $image = get_field('image');
 ?>
@@ -41,10 +42,16 @@ $image = get_field('image');
                     <div class="page-description"><?php echo esc_html($description); ?></div>
                 <?php } ?>
             </div>
-            <?php if ($action_button) { ?>
+            <?php if ($action_button || $demo_button) { ?>
             <div class="action-buttons">
+                <?php if ($demo_button) { ?>
+                <a href="<?php echo $demo_button['url']; ?>" target="_blank"
+                   class="btn btn__md demo_button"><?php echo $demo_button['title'] ?></a>
+                <?php } ?>
+                <?php if ($action_button) { ?>
                 <a href="<?php echo $action_button['url']; ?>" target="_blank"
                    class="btn btn__md explore_the_market"><?php echo $action_button['title'] ?></a>
+                <?php } ?>
             </div>
             <?php } ?>
         </div>
