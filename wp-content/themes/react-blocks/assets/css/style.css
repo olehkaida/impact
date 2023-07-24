@@ -2205,8 +2205,16 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 
 .main-title-image .container .content-title-description-button .action-buttons {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 12px;
+	flex-direction: column-reverse;
+}
+
+@media (min-width: 993px) {
+	.main-title-image .container .content-title-description-button .action-buttons {
+		flex-direction: row;
+		align-items: flex-start;
+	}
 }
 
 .main-title-image .container .content-title-description-button .action-buttons .explore_the_market {

@@ -82,8 +82,13 @@
             }
             .action-buttons{
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
                 gap: 12px;
+                flex-direction: column-reverse;
+                @include laptop{
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
                 .explore_the_market{
                     display: flex;
                     padding: 16px 28px;
