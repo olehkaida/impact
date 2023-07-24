@@ -176,4 +176,12 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'image-slider-block' => [
+        'name' => 'image-slider-block',
+        'title' => ('Image Slider Block'),
+        'description' => ('Image Slider Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
 ];

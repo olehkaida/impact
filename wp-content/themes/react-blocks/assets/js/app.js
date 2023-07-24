@@ -302,7 +302,7 @@ var ssb = {
 		}
 
 		// scrollbar width
-		cont.sw = 4;
+		cont.sw = 6;
 
 		// start scrolling
 		cont.ssb_onscroll();
