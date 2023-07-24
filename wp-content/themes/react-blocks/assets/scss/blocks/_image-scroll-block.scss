@@ -105,7 +105,10 @@
                 //overflow-y: scroll;
                 //-webkit-overflow-scrolling: touch;
                 margin-bottom: 25px;
-                direction: rtl;
+                direction: ltr;
+                @include laptop{
+                    direction: rtl;
+                }
 
                 #container {
                     width: 100%;
@@ -206,15 +209,25 @@
         bottom:0;
         cursor:pointer;
         position:absolute;
-        left:0;
+        right:0;
+        left: auto;
         display: none;
+        @include laptop{
+            left:0;
+            right: auto;
+        }
     }
 
     .ssb_sb {
         background-color: #EE4E54;
         cursor:pointer;
         position:absolute;
-        left:0;
+        right:0;
+        left: auto;
+        @include laptop{
+            left:0;
+            right: auto;
+        }
 
     }
 
@@ -231,8 +244,13 @@
         cursor:pointer;
         height:100%;
         position:absolute;
-        left:0;
+        right:0;
+        left: auto;
         top:0;
+        @include laptop{
+            left:0;
+            right: auto;
+        }
     }
 
     .ssb_up {
