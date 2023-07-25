@@ -50,18 +50,20 @@ $features = get_field('features');
             <img src="<?php echo $image["url"] ?>" alt="<?php echo $image["alt"] ?>" class="features-image">
             <img src="<?php echo $image_mobile["url"] ?>" alt="<?php echo $image_mobile["alt"] ?>" class="features-image-mobile">
             <div class="wrapper">
-                <div id="container">
-                    <div class="parent">
-                        <?php foreach ($features as $feature) { ?>
-                            <div class="feature flex">
-                                <div class="feature-col">
-                                    <div class="content-title-description">
-                                        <p class="feature-title"><?php echo $feature['title']; ?></p>
-                                        <p class="feature-description"><?php echo $feature['description']; ?></p>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <?php foreach ($features as $feature) { ?>
+                                <li class="splide__slide feature flex">
+                                    <div class="feature-col">
+                                        <div class="content-title-description">
+                                            <p class="feature-title"><?php echo $feature['title']; ?></p>
+                                            <p class="feature-description"><?php echo $feature['description']; ?></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        <?php } ?>
+                                </li>
+                            <?php } ?>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -69,3 +71,18 @@ $features = get_field('features');
 
     </div>
 </div>
+<script src="<?php echo get_template_directory_uri() . '/assets/js/'?>splide.min.js"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/'?>splide-core.min.css">
+<!-- Style the bar as you like -->
+<script>
+    //var splide = new Splide( '.splide' );
+    var splide = new Splide( '.splide', {
+        perPage: 3,
+        perMove: 1,
+        direction: 'ttb',
+        height   : '380px',
+        padding: '5px',
+        wheel    : true,
+    } );
+        splide.mount();
+</script>
