@@ -132,6 +132,9 @@
         padding: 0px 16px;
         align-items: center;
         gap: 96px;
+        @include full-width{
+            max-width: 1600px;
+        }
         @include laptop{
             padding: 0px 32px;
         }

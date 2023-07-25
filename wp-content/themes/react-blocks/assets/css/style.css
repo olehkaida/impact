@@ -3754,6 +3754,12 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	gap: 96px;
 }
 
+@media (min-width: 1600px) {
+	.left-right-repeater-block .container {
+		max-width: 1600px;
+	}
+}
+
 @media (min-width: 993px) {
 	.left-right-repeater-block .container {
 		padding: 0px 32px;
