@@ -39,11 +39,11 @@ header{
 
             nav{
                 display:none;
-                @include desktop{
+                @include laptop{
                     display: flex;
                 }
                 .nav-item{
-                    margin-right: 16px;
+                    margin-left: 40px;
                     display: flex;
                     align-items: center;
                     position: relative;

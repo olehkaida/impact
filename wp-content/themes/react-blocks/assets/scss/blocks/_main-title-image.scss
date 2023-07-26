@@ -84,10 +84,16 @@
                 display: flex;
                 align-items: center;
                 gap: 12px;
-                flex-direction: column-reverse;
+                flex-direction: column;
                 @include laptop{
                     flex-direction: row;
                     align-items: flex-start;
+                }
+                a {
+                    width: 100%;
+                    @include laptop{
+                        width: auto;
+                    }
                 }
                 .explore_the_market{
                     display: flex;

@@ -56,7 +56,12 @@ footer{
                 display: flex;
                 align-items: flex-start;
                 gap: 12px;
-                                a{
+                flex-direction: column;
+                @include laptop{
+                    flex-direction: row;
+                }
+                a{
+                    width: 100%;
                     color: var(--base-white, #FFF);
 
                     /* Text md/Semibold */
@@ -65,6 +70,9 @@ footer{
                     font-style: normal;
                     font-weight: 600;
                     line-height: 24px;
+                    @include laptop{
+                        width: auto;
+                    }
                 }
                 /* Text md/Semibold */
                 font-size: 16px;
@@ -187,8 +195,17 @@ footer{
                         .footer-navigation{
                             display: flex;
                             align-items: center;
-                            gap: 32px;
+                            gap: 27px;
                             align-self: stretch;
+                            justify-content: center;
+                            flex-direction: column;
+                            @media (min-width: 300px) {
+                                flex-direction: row;
+                            }
+                            @include laptop{
+                                justify-content: start;
+                                gap: 32px;
+                            }
                             .nav-col{
                                 .nav-heading{
                                     color: var(--gray-200, #EAECF0);
