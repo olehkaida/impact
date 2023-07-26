@@ -3414,6 +3414,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 .team-block .container .cols {
 	gap: 32px;
 	align-self: center;
+	width: 100%;
 }
 
 @media (min-width: 993px) {
@@ -3424,11 +3425,17 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 
 .team-block .container .cols .col {
 	display: flex;
-	max-width: 280px;
 	flex-direction: column;
 	align-items: center;
 	gap: 24px;
 	flex: 1 0 0;
+	padding: 0 16px;
+}
+
+@media (min-width: 993px) {
+	.team-block .container .cols .col {
+		padding: 0;
+	}
 }
 
 .team-block .container .cols .col .col-image {
@@ -3437,10 +3444,18 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	align-items: center;
 	gap: 24px;
 	align-self: stretch;
+	width: 100%;
 }
 
 .team-block .container .cols .col .col-image .col-avatar {
-	border-radius: 48px;
+	border-radius: 24px;
+	width: 100%;
+}
+
+@media (min-width: 993px) {
+	.team-block .container .cols .col .col-image .col-avatar {
+		border-radius: 48px;
+	}
 }
 
 .team-block .container .cols .col .col-text {
