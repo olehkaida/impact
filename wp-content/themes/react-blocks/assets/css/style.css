@@ -2933,6 +2933,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	align-items: center;
 	gap: 20px;
 	min-width: 250px;
+	align-self: flex-start;
 }
 
 .number-image-block .container .text-col .cols .col-wrap .col .col-info {
