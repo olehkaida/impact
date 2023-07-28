@@ -52,7 +52,12 @@ $cols = get_field('columns');
                     <?php foreach ($cols as $col) { ?>
                         <div class="col">
                             <div class="col-info">
-                                <p class="col-title"><?php echo $col['prepend'];?><span class="counter" data-count="<?php echo $col['number']; ?>"><?php echo $col['count_start'] ?></span><?php echo $col['append']; ?></p>
+                                <?php if ($col['number']) { ?>
+                                    <p class="col-title"><?php echo $col['prepend'];?><span class="counter" data-count="<?php echo $col['number']; ?>"><?php echo $col['count_start'] ?></span><?php echo $col['append']; ?></p>
+                                <?php } else { ?>
+                                    <p class="col-title"><?php echo $col['prepend'];?><?php echo $col['append']; ?></p>
+                                <?php }?>
+
                                 <?php if ($col['description']) { ?>
                                     <p class="col-description"><?php echo $col['description'] ?></p>
                                 <?php } ?>
