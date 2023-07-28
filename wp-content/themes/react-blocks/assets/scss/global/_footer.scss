@@ -177,18 +177,24 @@ footer{
                     align-items: flex-start;
                     gap: 32px;
                     align-self: stretch;
+                    flex-direction: column;
+                    @include laptop{
+                        flex-direction: row;
+                    }
                     .logo-nav-links{
                         display: flex;
                         flex-direction: column;
                         gap: 32px;
                         flex: 1 0 0;
-                        @include desktop{
+                        margin: 0 auto;
+                        @include laptop{
                             align-items: flex-start;
+                            margin: 0;
                         }
                         .logo-footer{
                             max-width: 95px;
                             margin: 32px auto 0 auto;
-                            @include desktop{
+                            @include laptop{
                                 margin: 0;
                             }
                         }
