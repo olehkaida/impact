@@ -2386,8 +2386,14 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 .big-features .container .features-content .features-image {
 	display: flex;
 	width: 100%;
-	border-radius: 48px;
+	border-radius: 24px;
 	object-fit: contain;
+}
+
+@media (min-width: 993px) {
+	.big-features .container .features-content .features-image {
+		border-radius: 48px;
+	}
 }
 
 .big-features .container .features-content .features-list {
