@@ -162,3 +162,27 @@ label.hs-error-msg.hs-main-font-element {
         margin: 0;
     }
 }
+
+
+.p-rich_text_list p-rich_text_list__bullet{
+    color: var(--gray-600, #475467)!important;
+
+    /* Text lg/Regular */
+    font-family: Greycliff CF!important;
+    font-size: 18px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: 28px!important;
+}
+
+.hs_error_rollup {
+    display: none;
+}
+.submitted-message.hs-main-font-element {
+    color: var(--gray-200, #EAECF0);
+    font-family: Greycliff CF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
