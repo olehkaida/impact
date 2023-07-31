@@ -2520,6 +2520,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	font-weight: 900;
 	line-height: 38px;
 	letter-spacing: -0.72px;
+	text-align: left;
 }
 
 @media (min-width: 993px) {
