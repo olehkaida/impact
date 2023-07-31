@@ -861,27 +861,17 @@ footer .footer-cta .cta-block {
 	align-items: center;
 	gap: 64px;
 	min-height: 118px;
-	background-image: url("../../assets/images/cta-background.svg");
+	background-image: url("../../assets/images/cta-background-mobile.svg");
 	background-repeat: no-repeat;
 	background-position-x: right;
+	background-size: contain;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 993px) {
 	footer .footer-cta .cta-block {
 		min-height: 188px;
 		background-image: url("../../assets/images/cta-background.svg");
-	}
-}
-
-@media (min-width: 1600px) {
-	footer .footer-cta .cta-block {
-		min-height: 196px;
-	}
-}
-
-@media (min-width: 1920px) {
-	footer .footer-cta .cta-block {
-		min-height: 236px;
+		background-size: auto;
 	}
 }
 
@@ -2763,7 +2753,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	flex-direction: column;
 	align-self: stretch;
 	color: var(--primary-700, #BE3E43);
-	text-align: center;
+	text-align: left;
 	/* Text md/Semibold */
 	font-size: 16px;
 	font-family: Greycliff CF;
@@ -2772,12 +2762,18 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	line-height: 24px;
 }
 
+@media (min-width: 993px) {
+	.left-right-repeater-block .container-heading .content .heading-suport-text .headind-subheading .section-pretitle {
+		text-align: center;
+	}
+}
+
 .left-right-repeater-block .container-heading .content .heading-suport-text .headind-subheading .section-title {
 	display: flex;
 	flex-direction: column;
 	align-self: stretch;
 	color: var(--gray-900, #1F2334);
-	text-align: center;
+	text-align: left;
 	/* Display md/Heavy */
 	font-size: 30px;
 	font-family: Greycliff CF;
@@ -2792,6 +2788,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 		font-size: 36px;
 		line-height: 44px;
 		/* 125% */
+		text-align: center;
 	}
 }
 
@@ -2800,13 +2797,19 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	flex-direction: column;
 	align-self: stretch;
 	color: var(--gray-600, #475467);
-	text-align: center;
+	text-align: left;
 	/* Text xl/Regular */
 	font-size: 20px;
 	font-family: Greycliff CF;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 30px;
+}
+
+@media (min-width: 993px) {
+	.left-right-repeater-block .container-heading .content .heading-suport-text .section-description {
+		text-align: center;
+	}
 }
 
 .left-right-repeater-block .container-heading .content .heading-suport-text ul li {

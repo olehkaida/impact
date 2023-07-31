@@ -72,7 +72,7 @@
                         align-self: stretch;
 
                         color: var(--primary-700, #BE3E43);
-                        text-align: center;
+                        text-align: left;
 
                         /* Text md/Semibold */
                         font-size: 16px;
@@ -80,13 +80,16 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 24px;
+                        @include laptop{
+                            text-align: center;
+                        }
                     }
                     .section-title{
                         display: flex;
                         flex-direction: column;
                         align-self: stretch;
                         color: var(--gray-900, #1F2334);
-                        text-align: center;
+                        text-align: left;
 
                         /* Display md/Heavy */
                         font-size: 30px;
@@ -98,6 +101,7 @@
                         @include laptop{
                             font-size: 36px;
                             line-height: 44px; /* 125% */
+                            text-align: center;
                         }
                     }
                 }
@@ -106,7 +110,7 @@
                     flex-direction: column;
                     align-self: stretch;
                     color: var(--gray-600, #475467);
-                    text-align: center;
+                    text-align: left;
 
                     /* Text xl/Regular */
                     font-size: 20px;
@@ -114,6 +118,9 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 30px;
+                    @include laptop{
+                        text-align: center;
+                    }
                 }
                 ul{
                     li{

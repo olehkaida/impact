@@ -16,19 +16,16 @@ footer{
             align-items: center;
             gap: 64px;
             min-height: 118px;
-            background-image: url("../../assets/images/cta-background.svg");
+            background-image: url("../../assets/images/cta-background-mobile.svg");
             background-repeat: no-repeat;
             background-position-x: right;
-            @include tablet {
+            background-size: contain;
+            @include laptop {
                 min-height: 188px;
                 background-image: url("../../assets/images/cta-background.svg");
+                background-size: auto;
             }
-            @include full-width {
-                min-height: 196px;
-            }
-            @include full-width-xl{
-                min-height: 236px;
-            }
+
             .cta-heading{
                 color: var(--base-white, #FFF);
                 text-align: center;
