@@ -127,6 +127,7 @@ input#email-dc267bac-8ccd-4114-9712-c78d02eb7c94 {
 	line-height: 24px;
 	border: none;
 	width: 235px;
+	height: 44px;
 }
 
 .contact-form-label {
@@ -156,6 +157,7 @@ input.hs-button.primary.large {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 24px;
+	height: 44px;
 }
 
 label.hs-error-msg.hs-main-font-element {
