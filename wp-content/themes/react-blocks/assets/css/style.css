@@ -2332,7 +2332,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 }
 
 .cols-info-block .container .section-heading-block .section-description {
-	color: #FF24F6;
+	color: var(--primary-700, #BE3E43);
 	/* Text xl/Regular */
 	font-family: Greycliff CF;
 	font-size: 18px;
