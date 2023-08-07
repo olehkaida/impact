@@ -77,7 +77,8 @@ footer{
                 font-style: normal;
                 font-weight: 600;
                 line-height: 24px;
-                .sign-up{
+                .sign-up,
+                .log_in{
                     display: flex;
                     padding: 12px 20px;
                     justify-content: center;
@@ -87,7 +88,8 @@ footer{
                     background: rgba(255, 255, 255, 0.20);
                     border: none;
                 }
-                .explore_the_market{
+                .explore_the_market,
+                .sign_up{
                     display: flex;
                     padding: 12px 20px;
                     justify-content: center;
