@@ -25,10 +25,13 @@ $defaultctas = get_field('defalt_cta', 'options')
     <div class="footer-cta <?php if ($footer_style) echo " " . $footer_style; ?>">
         <div class="cta-block">
             <?php if (!is_front_page()) { ?>
+            <?php if ($defaultctas['default_cta_text']) { ?>
             <p class="cta-heading default"><?php echo $defaultctas['default_cta_text']; ?></p>
-                <p class="cta-subheading default"><?php echo $defaultctas['default_cta_subtitle']; ?></p>
-               <?php
-            } ?>
+            <?php } ?>
+            <?php if ($defaultctas['default_cta_subtitle']) { ?>
+            <p class="cta-subheading default"><?php echo $defaultctas['default_cta_subtitle']; ?></p>
+            <?php } ?>
+            <?php } ?>
             <div class="action-buttons">
               <?php foreach ($defaultctas['default_links'] as $cta) { ?>
                 <a href="<?php echo $cta['default_link']; ?>" target="_blank"
