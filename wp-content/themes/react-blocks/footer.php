@@ -46,8 +46,10 @@ $defaultctas = get_field('defalt_cta', 'options')
             <div class="upper-footer">
                 <div class="logo-nav">
                     <div class="logo-nav-links">
-                <img src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" class="logo-footer">
-                <div class="footer-navigation grid">
+                        <a href="/">
+                            <img src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" class="logo-footer">
+                        </a>
+                    <div class="footer-navigation grid">
                     <?php foreach ($navs as $nav) { ?>
                         <div class="nav-col">
                             <a href="<?php echo $nav['parent_link']['url'] ?>"
