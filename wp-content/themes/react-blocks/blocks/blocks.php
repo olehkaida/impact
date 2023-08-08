@@ -16,6 +16,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'main_title_video' => [
+        'name' => 'main_title_video',
+        'title' => ('Main Title Video Block'),
+        'description' => ('Description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'cols_info_block' => [
         'name' => 'cols_info_block',
         'title' => ('Cols Info Title'),
