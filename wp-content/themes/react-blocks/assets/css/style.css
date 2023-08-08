@@ -4398,7 +4398,7 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	.image-scroll-block .container .features-content .features-image {
 		max-width: 50%;
 		display: flex;
-		margin-left: 40px;
+		margin: 0 40px;
 	}
 }
 
