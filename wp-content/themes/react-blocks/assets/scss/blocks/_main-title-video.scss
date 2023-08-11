@@ -87,26 +87,30 @@
             display: none;
             @include laptop{
                 margin: 32px auto -167px auto;
-                border-radius: 36px;
                 position: relative;
                 display: flex;
-                max-width: 1280px;
+                width: 840px;
                 flex-direction: column;
                 align-items: center;
                 gap: 32px;
             }
+            iframe{
+                border-radius: 48px;
+            }
         }
         .block-video-mobile{
-            margin: 32px auto -115px auto;
-            border-radius: 36px;
+            margin: 32px auto -91px auto;
             position: relative;
             display: flex;
-            max-width: 1280px;
+            max-width: 340px;
             flex-direction: column;
             align-items: center;
             gap: 32px;
             @include laptop{
                 display: none;
+            }
+            iframe{
+                border-radius: 24px;
             }
         }
     }
