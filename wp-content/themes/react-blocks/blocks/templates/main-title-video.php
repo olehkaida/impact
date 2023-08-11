@@ -42,7 +42,7 @@ $video = get_field('video');
             </div>
         </div>
         <div class="block-video-laptop">
-            <iframe src="<?php echo esc_html($video); ?>&autoplay=1&loop=1&autopause=0&background=1" width="840" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="<?php echo esc_html($video); ?>&autoplay=1&loop=1&autopause=0&background=1" width="850" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
         <div class="block-video-mobile">
             <iframe src="<?php echo esc_html($video); ?>&autoplay=1&loop=1&autopause=0&background=1" width="340" height="192" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
