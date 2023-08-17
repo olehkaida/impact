@@ -3712,13 +3712,18 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 
 .number-gallery-block .container .gallery-block .col-odd .gallery-row .gallery-video {
 	width: 310px;
-	height: 238px;
+	height: 175px;
+	height: 175px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
 }
 
 @media (min-width: 993px) {
 	.number-gallery-block .container .gallery-block .col-odd .gallery-row .gallery-video {
 		width: 310px;
-		height: 238px;
+		height: 175px;
 	}
 }
 

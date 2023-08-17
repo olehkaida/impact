@@ -31,6 +31,7 @@ $description = get_field('description');
 $cols_setup = get_field('number_of_columns');
 $cols = get_field('columns');
 $video = get_field('video');
+$image_video = get_field('image_video');
 $image_1 = get_field('image_1');
 $image_2 = get_field('image_2');
 $image_3 = get_field('image_3');
@@ -58,7 +59,7 @@ $image_5 = get_field('image_5');
                     </div>
                 </div>
                 <div class="gallery-row">
-                    <div class="gallery-video">
+                    <div class="gallery-video" style="background-image: url(<?php echo $image_video['url'] ?>)">
                         <iframe src="<?php echo esc_html($video); ?>&autoplay=1&loop=1&autopause=0&background=1" width="310" height="175" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
