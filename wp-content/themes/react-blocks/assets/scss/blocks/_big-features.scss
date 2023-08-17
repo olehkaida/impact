@@ -90,6 +90,7 @@
                 object-fit: contain;
                 @include laptop{
                     border-radius: 48px;
+                    max-width: 576px;
                 }
             }
             .features-list {
