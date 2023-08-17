@@ -48,6 +48,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'number-gallery-block' => [
+        'name' => 'number-gallery-block',
+        'title' => ('Number Gallery Block'),
+        'description' => ('Number Gallery Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'left-right-repeater-block' => [
         'name' => 'left-right-repeater-block',
         'title' => ('Left Right Repeater Block'),
