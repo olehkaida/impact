@@ -190,11 +190,11 @@
             }
         }
         .gallery-block {
-            display: flex;
-            flex: 1 0 0;
-            flex-direction: column;
-            gap: 16px;
+            display: none;
             @include laptop {
+                display: flex;
+                flex: 1 0 0;
+                gap: 16px;
                 flex-direction: row;
             }
             .col-even {
@@ -213,6 +213,7 @@
                         width: 133px;
                         height: 122px;
                         border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         @include laptop{
                             width: 133px;
                             height: 122px;
@@ -222,6 +223,7 @@
                         width: 147px;
                         height: 89px;
                         border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         @include laptop{
                             width: 147px;
                             height: 89px;
@@ -235,6 +237,7 @@
                         width: 309px;
                         height: 126px;
                         border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         @include laptop{
                             width: 309px;
                             height: 126px;
@@ -248,6 +251,7 @@
                         width: 246px;
                         height: 158px;
                         border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         @include laptop{
                             width: 246px;
                             height: 158px;
@@ -267,6 +271,7 @@
                         width: 244px;
                         height: 182px;
                         border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         @include laptop{
                             width: 244px;
                             height: 182px;
@@ -290,12 +295,84 @@
                         }
                         iframe{
                             border-radius: 10px;
+                            box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                         }
                     }
                 }
             }
         }
-
+        .gallery-block-mobile {
+            display: flex;
+            flex: 1 0 0;
+            gap: 16px;
+            flex-direction: column;
+            @include laptop {
+                display: none;
+            }
+            .col-mobile {
+                gap: 16px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                .gallery-row {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: space-between;
+                    align-items: center;
+                    .gallery-image-mobile-1{
+                        width: 153px;
+                        height: 99px;
+                        flex-shrink: 0;
+                        border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+                    }
+                    .gallery-image-mobile-2{
+                        width: 118px;
+                        height: 135px;
+                        flex-shrink: 0;
+                        border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+                    }
+                }
+                .gallery-row {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: center;
+                    .gallery-video-mobile{
+                        width: 291px;
+                        height: 165px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 10px;
+                        iframe{
+                            border-radius: 10px;
+                            box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+                        }
+                    }
+                }
+                .gallery-row {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: space-between;
+                    align-items: center;
+                    .gallery-image-mobile-3{
+                        width: 118px;
+                        height: 135px;
+                        flex-shrink: 0;
+                        border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+                    }
+                    .gallery-image-mobile-4{
+                        width: 153px;
+                        height: 99px;
+                        flex-shrink: 0;
+                        border-radius: 10px;
+                        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+                    }
+                }
+            }
+        }
     }
     .left {
         flex-direction: column;

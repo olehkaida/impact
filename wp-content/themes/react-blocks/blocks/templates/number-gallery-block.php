@@ -38,6 +38,13 @@ $image_3 = get_field('image_3');
 $image_4 = get_field('image_4');
 $image_5 = get_field('image_5');
 
+$video_mobile = get_field('video_mobile');
+$image_video_mobile = get_field('image_video_mobile');
+$image_mobile_1 = get_field('image_mobile_1');
+$image_mobile_2 = get_field('image_mobile_2');
+$image_mobile_3 = get_field('image_mobile_3');
+$image_mobile_4 = get_field('image_mobile_4');
+
 ?>
 
 <div <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
@@ -88,6 +95,43 @@ $image_5 = get_field('image_5');
                     <div class="gallery-image-5"
                          style="background: var(--avatar-user-portrait-alisa-hester,
                                  url(<?php echo $image_5['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-block-mobile">
+            <div class="col-mobile">
+                <div class="gallery-row">
+                    <div class="gallery-image-mobile-1"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_mobile_1['url'] ?>),
+                                 lightgray 50% / cover no-repeat);
+                                 width: 153px;
+                                 height: 99px;
+                                 flex-shrink: 0;
+                                 border-radius: 10px;">
+                    </div>
+                    <div class="gallery-image-mobile-2"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_mobile_2['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-video-mobile" style="background-image: url(<?php echo $image_video_mobile['url'] ?>)">
+                        <iframe src="<?php echo esc_html($video_mobile); ?>&autoplay=1&loop=1&autopause=0&background=1" width="291" height="165" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-image-mobile-3"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_mobile_3['url'] ?>),
+                                 lightgray 50% / cover no-repeat);">
+                    </div>
+                    <div class="gallery-image-mobile-4"
+                         style="background: var(--avatar-user-portrait-alisa-hester,
+                                 url(<?php echo $image_mobile_4['url'] ?>),
                                  lightgray 50% / cover no-repeat);">
                     </div>
                 </div>

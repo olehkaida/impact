@@ -48,6 +48,8 @@ $image_5 = get_field('image_5');
                                  lightgray 50% / cover no-repeat);
                                  width: 138px;
                                  height: 138px;
+                                 border-radius: 10px;
+                                 box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
                                  @media (min-width: 993px){
                                  width: 160px;
                                  height: 160px;
