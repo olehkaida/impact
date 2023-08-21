@@ -1136,6 +1136,10 @@ footer .main-footer .container .upper-footer .logo-nav .logo-nav-links .footer-n
 	display: block;
 }
 
+footer .main-footer .container .upper-footer .contact-form {
+	display: none;
+}
+
 footer .main-footer .container .bottom-footer {
 	display: flex;
 	padding-top: 32px;
@@ -4132,12 +4136,12 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 
 .testimmonial_block .container .content .attribution .avatar-text .testimonial-image {
 	display: flex;
-	width: 64px;
-	height: 64px;
+	width: 128px;
+	height: 128px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 32px;
+	border-radius: 64px;
 }
 
 .testimmonial_block .container .content .attribution .avatar-text .testimonial-info {

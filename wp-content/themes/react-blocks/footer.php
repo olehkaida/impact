@@ -25,22 +25,24 @@ $defaultctas = get_field('defalt_cta', 'options')
     <div class="footer-cta <?php if ($footer_style) echo " " . $footer_style; ?>">
         <div class="cta-block">
             <?php if (!is_front_page()) { ?>
-            <?php if ($defaultctas['default_cta_text']) { ?>
-            <p class="cta-heading default"><?php echo $defaultctas['default_cta_text']; ?></p>
-            <?php } ?>
-            <?php if ($defaultctas['default_cta_subtitle']) { ?>
-            <p class="cta-subheading default"><?php echo $defaultctas['default_cta_subtitle']; ?></p>
-            <?php } ?>
+                <?php if ($defaultctas['default_cta_text']) { ?>
+                    <p class="cta-heading default"><?php echo $defaultctas['default_cta_text']; ?></p>
+                <?php } ?>
+                <?php if ($defaultctas['default_cta_subtitle']) { ?>
+                    <p class="cta-subheading default"><?php echo $defaultctas['default_cta_subtitle']; ?></p>
+                <?php } ?>
             <?php } ?>
             <div class="action-buttons">
-              <?php foreach ($defaultctas['default_links'] as $cta) { ?>
-                <a href="<?php echo $cta['default_link']; ?>" target="_blank"
-                   class="btn btn__md <?php echo trim(strtolower(preg_replace('/[A-Z]\s+([A-Z](?![a-z]))*/', '_$0', preg_replace('/\s+/', '_', $cta['default_button_text']))), '_'); ?>"><?php echo $cta['default_button_text'] ?></a>
-            <?php } ?>
+                <?php foreach ($defaultctas['default_links'] as $cta) { ?>
+                    <a href="<?php echo $cta['default_link']; ?>" target="_blank"
+                       class="btn btn__md <?php echo trim(strtolower(preg_replace('/[A-Z]\s+([A-Z](?![a-z]))*/', '_$0', preg_replace('/\s+/', '_', $cta['default_button_text']))), '_'); ?>"><?php echo $cta['default_button_text'] ?></a>
+                <?php } ?>
             </div>
             <div class="footer-cta-image">
-                <img src="<?php echo $defaultctas['cta_image_desktop']['url'] ?>" alt="<?php echo $defaultctas['cta_image_desktop']['alt'] ?>" class="footer-cta-image-desktop">
-                <img src="<?php echo $defaultctas['cta_image_mobile']['url'] ?>" alt="<?php echo $defaultctas['cta_image_mobile']['alt'] ?>" class="footer-cta-image-mobile">
+                <img src="<?php echo $defaultctas['cta_image_desktop']['url'] ?>"
+                     alt="<?php echo $defaultctas['cta_image_desktop']['alt'] ?>" class="footer-cta-image-desktop">
+                <img src="<?php echo $defaultctas['cta_image_mobile']['url'] ?>"
+                     alt="<?php echo $defaultctas['cta_image_mobile']['alt'] ?>" class="footer-cta-image-mobile">
             </div>
         </div>
     </div>
@@ -52,30 +54,30 @@ $defaultctas = get_field('defalt_cta', 'options')
                         <a href="/">
                             <img src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['alt'] ?>" class="logo-footer">
                         </a>
-                    <div class="footer-navigation grid">
-                    <?php foreach ($navs as $nav) { ?>
-                        <div class="nav-col">
-                            <a href="<?php echo $nav['parent_link']['url'] ?>"
-                               class="nav-heading"><?php echo $nav['parent_link']['title'] ?></a>
-                            <div class="nav-items">
+                        <div class="footer-navigation grid">
+                            <?php foreach ($navs as $nav) { ?>
+                                <div class="nav-col">
+                                    <a href="<?php echo $nav['parent_link']['url'] ?>"
+                                       class="nav-heading"><?php echo $nav['parent_link']['title'] ?></a>
+                                    <div class="nav-items">
 
-                                <?php
-                                if ($nav['sub_links']) {
-                                    foreach ($nav['sub_links'] as $nav_item) { ?>
-                                        <a href="<?php echo $nav_item['link']['url'] ?>"
-                                           class="nav-item"><?php echo $nav_item['link']['title'] ?></a>
                                         <?php
-                                    }
-                                } ?>
-                            </div>
+                                        if ($nav['sub_links']) {
+                                            foreach ($nav['sub_links'] as $nav_item) { ?>
+                                                <a href="<?php echo $nav_item['link']['url'] ?>"
+                                                   class="nav-item"><?php echo $nav_item['link']['title'] ?></a>
+                                                <?php
+                                            }
+                                        } ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
                         </div>
-                    <?php } ?>
-                </div>
                     </div>
-                <div class="contact-form">
-                    <div class="contact-form-label">Be in the know</div>
-                    <?php echo do_shortcode("[hubspot type='form' portal='40828618' id='dc267bac-8ccd-4114-9712-c78d02eb7c94']"); ?>
-                </div>
+                    <div class="contact-form">
+                        <div class="contact-form-label">Be in the know</div>
+                        <?php echo do_shortcode("[hubspot type='form' portal='40828618' id='dc267bac-8ccd-4114-9712-c78d02eb7c94']"); ?>
+                    </div>
                 </div>
             </div>
             <div class="bottom-footer flex">
@@ -96,9 +98,9 @@ $defaultctas = get_field('defalt_cta', 'options')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+            $("a").on('click', function (event) {
 
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
@@ -112,7 +114,7 @@ $defaultctas = get_field('defalt_cta', 'options')
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function(){
+                    }, 800, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
