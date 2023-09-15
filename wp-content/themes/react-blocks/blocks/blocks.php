@@ -32,6 +32,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'signup_block' => [
+        'name' => 'signup_block',
+        'title' => ('Signup Block'),
+        'description' => ('Signup description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'big_features_block' => [
         'name' => 'big_features_block',
         'title' => ('Big Features  Title'),

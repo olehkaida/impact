@@ -5550,4 +5550,213 @@ footer .main-footer .container .bottom-footer .footer-additional-links .footer-i
 	padding: 180px 2px 10px;
 }
 
+.signup-block {
+	display: flex;
+	max-width: 1440px;
+	padding: 96px 0px;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+@media (min-width: 993px) {
+	.signup-block {
+		gap: 64px;
+		padding: 96px 0px;
+	}
+}
+
+.signup-block .container {
+	display: flex;
+	max-width: 1280px;
+	padding: 0px 16px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+@media (min-width: 993px) {
+	.signup-block .container {
+		padding: 0px 32px;
+	}
+}
+
+.signup-block .container .section-heading-block {
+	display: flex;
+	max-width: 768px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.signup-block .container .section-heading-block .section-pretitle {
+	color: var(--primary-700, #BE3E43);
+	/* Text md/Semibold */
+	font-family: Greycliff CF;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	/* 150% */
+}
+
+.signup-block .container .section-heading-block .section-title {
+	color: var(--gray-900, #1F2334);
+	/* Display sm/Heavy */
+	font-family: Greycliff CF;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 38px;
+	/* 126.667% */
+	color: var(--gray-900, #1F2334);
+	margin-left: 0;
+	text-align: left;
+}
+
+@media (min-width: 1200px) {
+	.signup-block .container .section-heading-block .section-title {
+		font-size: 36px;
+		line-height: 44px;
+	}
+}
+
+.signup-block .container .section-heading-block .section-description {
+	color: var(--gray-900, #1F2334);
+	/* Text xl/Regular */
+	font-family: Greycliff CF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	/* 150% */
+	margin-left: 0;
+	text-align: left;
+	margin-left: 0;
+	text-align: left;
+}
+
+@media (min-width: 993px) {
+	.signup-block .container .section-heading-block .section-description {
+		font-size: 20px;
+		line-height: 30px;
+		/* 150% */
+	}
+}
+
+.signup-block .container .cols {
+	align-items: flex-start;
+	gap: 24px;
+	align-self: stretch;
+}
+
+.signup-block .container .cols .col {
+	display: flex;
+	padding: 0px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	flex: 1 0 0;
+	align-self: stretch;
+	border-radius: 48px;
+	height: fit-content;
+}
+
+@media (min-width: 993px) {
+	.signup-block .container .cols .col {
+		gap: 64px;
+	}
+}
+
+.signup-block .container .cols .col .col-desktop-image .col-icon {
+	display: flex;
+	width: 48px;
+	padding: 2px 0px;
+	justify-content: center;
+	align-items: center;
+}
+
+.signup-block .container .cols .col .col-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	align-self: stretch;
+}
+
+.signup-block .container .cols .col .col-info .col-title {
+	color: var(--gray-900, #1F2334);
+	/* Text xl/Semibold */
+	font-family: Greycliff CF;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	/* 150% */
+}
+
+.signup-block .container .cols .col .col-info .col-description {
+	color: var(--gray-600, #475467);
+	font-family: Greycliff CF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.signup-block .container .cols .col .new-cta-btn .col-link-btn {
+	display: flex;
+	padding: 12px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	border-radius: 8px;
+	border: 1px solid var(--primary-600, #EE4E54);
+	background: var(--primary-600, #EE4E54);
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+	width: 100px;
+	margin: 24px 0;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.signup-block .container .one {
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+	.signup-block .container .two {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 768px) {
+	.signup-block .container .three {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 993px) {
+	.signup-block .container .three {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 768px) {
+	.signup-block .container .four {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1200px) {
+	.signup-block .container .four {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.signup-block .container .hbspt-form {
+	width: 100% !important;
+	margin-top: -100px;
+}
+
 /*# sourceMappingURL=style.css.map */
