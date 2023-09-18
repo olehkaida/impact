@@ -979,6 +979,7 @@ footer .footer-cta .cta-block .footer-cta-image {
 
 footer .footer-cta .cta-block .footer-cta-image .footer-cta-image-mobile {
 	display: flex;
+	margin-bottom: -56px;
 }
 
 @media (min-width: 1200px) {

@@ -119,6 +119,7 @@ footer{
                 gap: 32px;
                 .footer-cta-image-mobile{
                     display: flex;
+                    margin-bottom: -56px;
                     @include desktop{
                         display: none;
                     }
