@@ -153,6 +153,7 @@ $banner_image = get_field("banner_image");
                 </div>
                 <div class="posts grid">
                     <?php
+                    $current_post_id = get_the_ID();
                     $categories = get_the_category();
                     $category_ids = array();
 
@@ -165,7 +166,8 @@ $banner_image = get_field("banner_image");
                         'category__in' => $category_ids, // Use the category IDs from the current post
                         'posts_per_page' => 3,         // Limit the number of posts to 3
                         'orderby'   => 'date',         // Sort by date
-                        'order'     => 'DESC',         // Sort in descending order (newest first)
+                        'order'     => 'DESC',
+                        'post__not_in'   => array($current_post_id),// Sort in descending order (newest first)
                     );
 
                     $posts = get_posts($args);
