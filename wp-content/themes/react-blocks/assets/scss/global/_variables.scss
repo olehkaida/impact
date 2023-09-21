@@ -30,6 +30,7 @@ $phone-lg:480px;
 $tablet: 768px;
 $laptop: 993px;
 $desktop: 1200px;
+$mac: 1400px;
 $full-width: 1600px;
 $full-width-xl:1920px;
 $big-desktop: 2100px;
@@ -40,6 +41,7 @@ $breakpoints: (
         'tablet': $tablet,
         'laptop': $laptop,
         'desktop': $desktop,
+        'mac': $mac,
         'full-width': $full-width,
         'full-width-xl': $full-width-xl,
         'big-desktop': $big-desktop
@@ -67,6 +69,11 @@ $breakpoints: (
 }
 @mixin desktop {
     @media (min-width: $desktop) {
+        @content;
+    }
+}
+@mixin mac {
+    @media (min-width: $mac) {
         @content;
     }
 }

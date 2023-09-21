@@ -86,7 +86,7 @@
         .block-video-laptop{
             display: none;
             @include laptop{
-                margin: 32px auto -167px auto;
+                margin: 32px auto -153px auto;
                 position: relative;
                 display: flex;
                 width: 850px;
@@ -99,7 +99,7 @@
             }
         }
         .block-video-mobile{
-            margin: 32px auto -91px auto;
+            margin: 32px auto -85px auto;
             position: relative;
             display: flex;
             max-width: 340px;

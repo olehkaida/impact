@@ -40,6 +40,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'related_blog_posts_block' => [
+        'name' => 'related_blog_posts_block',
+        'title' => ('Related Blog Posts Title'),
+        'description' => ('Related Blog Posts description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'big_features_block' => [
         'name' => 'big_features_block',
         'title' => ('Big Features  Title'),
