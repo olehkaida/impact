@@ -6937,7 +6937,9 @@ button.swiper-pagination-bullet {
 		min-height: 700px;
 		position: absolute;
 		width: 700px;
+		max-width: 50%;
 		right: 0;
+		object-fit: cover;
 	}
 }
 
