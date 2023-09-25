@@ -36,6 +36,10 @@ html {
 	overflow-x: hidden;
 }
 
+.site-main {
+	margin-top: 113px;
+}
+
 .post,
 .page {
 	margin: 0;
@@ -476,7 +480,7 @@ header {
 	background: #1F2334;
 	/* Background blur / lg */
 	backdrop-filter: blur(12px);
-	position: relative;
+	position: fixed;
 	margin-bottom: -1px;
 	z-index: 1;
 }
