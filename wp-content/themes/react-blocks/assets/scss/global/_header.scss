@@ -6,7 +6,7 @@ header{
     backdrop-filter: blur(12px);
     position: fixed;
     margin-bottom: -1px;
-    z-index: 1;
+    z-index: 999;
 
     @include tablet{
 
