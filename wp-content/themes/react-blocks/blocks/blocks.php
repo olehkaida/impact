@@ -48,6 +48,22 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'featured_blog_posts_block' => [
+        'name' => 'featured_blog_posts_block',
+        'title' => ('Featured Blog Posts Title'),
+        'description' => ('Featured Blog Posts description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
+    'category_blog_posts_block' => [
+        'name' => 'category_blog_posts_block',
+        'title' => ('Category Blog Posts Title'),
+        'description' => ('Category Blog Posts description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'big_features_block' => [
         'name' => 'big_features_block',
         'title' => ('Big Features  Title'),

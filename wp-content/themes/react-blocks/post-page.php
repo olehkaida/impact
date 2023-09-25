@@ -1,4 +1,4 @@
-<?php /* Template Name: Media Posts Page */ ?>
+<?php /* Template Name: Posts Page */ ?>
 <?php
 /**
  * The main template file

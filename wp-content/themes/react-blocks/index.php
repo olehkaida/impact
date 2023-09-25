@@ -22,15 +22,6 @@ $categories = get_categories('');
         </div>
         <div class="category-grid">
             <div class="container">
-                <div class="tab-wrapper">
-                    <div class="tab-btns">
-                        <button class="btn tab-btn active" data-target="Resources">Resources</button>
-                        <a class="btn tab-btn" href="<?php echo get_site_url() . '/resources/media/'; ?>"
-                           data-target="Media">Media</a>
-                    </div>
-
-                    <div class="content active" id="Resources">
-                        <p>
                         <div class="posts-grid grid">
                             <?php if (have_posts()) :
                                 if (is_home() && !is_front_page()) : ?>
@@ -43,17 +34,6 @@ $categories = get_categories('');
 
                             endif; ?>
                         </div>
-
-
-                        </p>
-                    </div>
-                    <div>
-                        <?php the_posts_pagination(array(
-                            'mid_size' => 2,
-                            'prev_text' => __('Prev', 'textdomain'),
-                            'next_text' => __('Next', 'textdomain'),
-                        )); ?>
-                    </div>
                     <?php wp_reset_postdata(); ?>
                 </div>
             </div>

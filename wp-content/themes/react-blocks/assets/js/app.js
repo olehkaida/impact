@@ -138,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
 function setCookie(name, value, days) {
 	var expires = "";
 	if (days) {

@@ -89,17 +89,38 @@ $banner_image = get_field("banner_image");
                                         <div class="post">
                                             <a href="<?php echo get_post_permalink($post); ?>" target="_blank">
                                                 <?php echo(get_the_post_thumbnail($post)); ?>
-                                                <div class="post-info">
-                                                    <p class="post-title"><?php echo(get_the_title($post)); ?></p>
-                                                    <?php if ($description_posts) { ?>
+                                                <div class="bottom-panel">
+                                                    <div class="bottom-panel-post">
+                                                    <div class="col-text-post">
+                                                        <div class="col-info-post">
+                                                            <div class="col-info-text-post">
+                                                                <p class="autor-name"><?php echo $contributor['name']; ?></p>
+                                                                <p class="published"><?php echo get_the_date('M j Y'); ?></p>
+                                                            </div>
+                                                            <div class="col-text-post-category">
+                                                                <p class="category-name">
+                                                                    <?php
+                                                                    $categoty_list = array();
+                                                                    foreach ($post_categories as $category) array_push($categoty_list, $category->name);
+                                                                    echo(implode(", ", $categoty_list));
+                                                                    ?>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="post-info">
+                                                        <p class="post-title"><?php echo(get_the_title($post)); ?></p>
+                                                        <?php if ($description_posts) { ?>
                                                         <p class="section-description">
                                                             <?php echo $description_posts; ?>
                                                         </p>
                                                     <?php } ?>
-                                                </div>
-                                                <div class="post-navigation">
-                                                    <a href="<?php echo get_post_permalink($post); ?>" target="_blank" class="post-link">Read
+                                                    </div>
+                                                     <div class="post-navigation">
+                                                        <a href="<?php echo get_post_permalink($post); ?>" target="_blank" class="post-link">Read
                                                         More</a>
+                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
@@ -190,6 +211,25 @@ $banner_image = get_field("banner_image");
                         <div class="post">
                             <a href="<?php echo get_post_permalink($post); ?>" target="_blank">
                                 <?php echo(get_the_post_thumbnail($post)); ?>
+                                <div class="bottom-panel-post">
+                                    <div class="col-text-post">
+                                        <div class="col-info-post">
+                                            <div class="col-info-text-post">
+                                                <p class="autor-name"><?php echo $contributor['name']; ?></p>
+                                                <p class="published"><?php echo get_the_date('M j Y'); ?></p>
+                                            </div>
+                                            <div class="col-text-post-category">
+                                                <p class="category-name">
+                                                    <?php
+                                                    $categoty_list = array();
+                                                    foreach ($post_categories as $category) array_push($categoty_list, $category->name);
+                                                    echo(implode(", ", $categoty_list));
+                                                    ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="post-info">
                                     <p class="post-title"><?php echo(get_the_title($post)); ?></p>
                                     <?php if ($description_posts) { ?>
