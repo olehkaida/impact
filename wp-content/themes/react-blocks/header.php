@@ -73,10 +73,18 @@ $count_down = get_field('count_down', 'option');
             </script>
             <style>
                 header{
-                    margin-top: 70px;
+                    margin-top: 99px;
                 }
                 .site-main{
-                    margin-top: 170px!important;
+                    margin-top: 200px!important;
+                }
+                @media (min-width: 993px) {
+                    header{
+                        margin-top: 70px;
+                    }
+                    .site-main{
+                        margin-top: 170px!important;
+                    }
                 }
             </style>
         </div>
