@@ -28,15 +28,51 @@ $nav = get_field('menu', 'option');
 $nav_mobile = get_field('mobile_menu', 'option');
 $login_bnt = get_field('login_button', 'option');
 $sign_up_bnt = get_field('partners_button', 'option');
-$banner_text = get_field('banner_text', 'option');
+$count_down = get_field('count_down', 'option');
 
 ?>
 <div id="page">
-    <?php if ($banner_text) { ?>
-        <div class="upper-header-banner">
-            <div class="banner-text"><?php echo $banner_text; ?></div>
-            <div id="close-banner" class="close-banner"></div>
+    <?php if ($count_down) { ?>
+        <div class="upper-header-banner" id="count-down">
+            <div class="banner-text"><?php echo $count_down['title']; ?></div>
+            <div class="clock" id="clock">
+                <div class="tile">
+                    <p class="days"></p>
+                    <p class="label">days</p>
+                </div>
+                <div class="tile">
+                    <p class="hours"></p>
+                    <p class="label">hours</p>
+                </div>
+                <div class="tile">
+                    <p class="minutes"></p>
+                    <p class="label">minutes</p>
+                </div>
+                <div class="tile">
+                    <p class="seconds"></p>
+                    <p class="label">seconds</p>
+                </div>
+            </div>
+            <script>
+                var countDownDate = new Date("<?php echo $count_down['end_date'];?>").getTime();
+
+                var x = setInterval(function () {
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.querySelector(".days").innerHTML = days;
+                    document.querySelector(".hours").innerHTML = hours;
+                    document.querySelector(".minutes").innerHTML = minutes;
+                    document.querySelector(".seconds").innerHTML = seconds;
+                }, 1000);
+            </script>
         </div>
+
     <?php } ?>
     <header id="masthead" class="site-header">
         <div class="container flex">
