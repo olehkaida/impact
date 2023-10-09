@@ -72,7 +72,7 @@ $name = get_field('name');
                     // Optional parameters
                     loop: true,
                     slidesPerView: 1,
-                    spaceBetween: 150,
+                    spaceBetween: 250,
                     centeredSlides: true,
 
                     // If we need pagination
