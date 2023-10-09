@@ -71,6 +71,14 @@ $count_down = get_field('count_down', 'option');
                     document.querySelector(".seconds").innerHTML = seconds;
                 }, 1000);
             </script>
+            <style>
+                header{
+                    margin-top: 130px;
+                }
+                .site-main{
+                    margin-top: 243px!important;
+                }
+            </style>
         </div>
 
     <?php } ?>

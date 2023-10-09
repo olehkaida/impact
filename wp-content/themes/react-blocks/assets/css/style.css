@@ -147,7 +147,7 @@ html {
 }
 
 .site-main {
-	margin-top: 243px;
+	margin-top: 113px;
 }
 
 .post,
@@ -593,7 +593,6 @@ header {
 	position: fixed;
 	margin-bottom: -1px;
 	z-index: 999;
-	margin-top: 130px;
 }
 
 @media (min-width: 993px) {
