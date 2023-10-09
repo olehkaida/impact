@@ -112,6 +112,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'testimmonial_slider_block' => [
+        'name' => 'testimmonial_slider_block',
+        'title' => ('Testimonial Slider Block'),
+        'description' => ('Testimonial Slider Block'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'team_block' => [
         'name' => 'team_block',
         'title' => ('Team Block'),
