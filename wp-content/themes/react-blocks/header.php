@@ -93,7 +93,8 @@ $count_down = get_field('count_down', 'option');
     <header id="masthead" class="site-header">
         <div class="container flex">
             <div class="logo-col"><a href="/">
-                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="site-logo"></a></div>
+                    <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="site-logo"></a>
+            </div>
             <div class="navigation">
                 <nav class="menu">
                     <?php foreach ($nav as $link) { ?>

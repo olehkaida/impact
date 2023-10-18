@@ -40,6 +40,14 @@ $blocks = [
         'category' => 'happen-blocks',
         'icon' => 'block-default',
     ],
+    'login_block' => [
+        'name' => 'login_block',
+        'title' => ('Login Block'),
+        'description' => ('Login description'),
+        'render_callback' => 'render_acf_block_callback',
+        'category' => 'happen-blocks',
+        'icon' => 'block-default',
+    ],
     'related_blog_posts_block' => [
         'name' => 'related_blog_posts_block',
         'title' => ('Related Blog Posts Title'),
