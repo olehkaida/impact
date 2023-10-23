@@ -3875,7 +3875,6 @@ button.swiper-pagination-bullet {
 
 .cols-info-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 96px 0px;
 	flex-direction: column;
 	align-items: center;
@@ -4623,7 +4622,6 @@ button.swiper-pagination-bullet {
 
 .number-image-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 96px 16px;
 	flex-direction: column;
 	align-items: center;
@@ -4863,7 +4861,6 @@ button.swiper-pagination-bullet {
 
 .number-gallery-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 96px 16px;
 	flex-direction: column;
 	align-items: center;
@@ -5323,7 +5320,6 @@ button.swiper-pagination-bullet {
 
 .numbers-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 48px 0px;
 	flex-direction: column;
 	align-items: center;
@@ -5938,7 +5934,6 @@ button.swiper-pagination-bullet {
 
 .leadership-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 96px 0px;
 	flex-direction: column;
 	align-items: center;
@@ -6217,7 +6212,6 @@ button.swiper-pagination-bullet {
 
 .gallery-image-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 48px 16px;
 	flex-direction: column;
 	align-items: center;
@@ -8815,7 +8809,6 @@ button.swiper-pagination-bullet {
 
 .login-block {
 	display: flex;
-	max-width: 1440px;
 	padding: 96px 0px;
 	flex-direction: column;
 	align-items: center;
