@@ -215,6 +215,11 @@ header{
             align-items:center;
             height: 80px;
             justify-content: center;
+            .logo-col{
+                .site-logo{
+                    width: 95px;
+                }
+            }
             .close-button{
                 width: 15px;
                 height: 15px;

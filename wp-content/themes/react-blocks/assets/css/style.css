@@ -837,6 +837,10 @@ header .mobile-menu .upper-container {
 	justify-content: center;
 }
 
+header .mobile-menu .upper-container .logo-col .site-logo {
+	width: 95px;
+}
+
 header .mobile-menu .upper-container .close-button {
 	width: 15px;
 	height: 15px;

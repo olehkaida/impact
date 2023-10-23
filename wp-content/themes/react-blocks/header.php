@@ -69,6 +69,14 @@ $count_down = get_field('count_down', 'option');
                     document.querySelector(".hours").innerHTML = hours;
                     document.querySelector(".minutes").innerHTML = minutes;
                     document.querySelector(".seconds").innerHTML = seconds;
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("count-down").style.display = 'none';
+                        document.getElementById('masthead').style.marginTop = '0px';
+                        document.querySelector(".site-main").style.setProperty('margin-top', '100px', 'important');
+
+                    }
                 }, 1000);
             </script>
             <style>
