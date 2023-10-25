@@ -39,7 +39,7 @@ $button = get_field('button');
                     <div class="section-title"><?php echo esc_html($title); ?></div>
                 <?php } ?>
                 <?php if ($description) { ?>
-                    <div class="section-description"><?php echo esc_html($description); ?></div>
+                    <div class="section-description"><?php echo $description; ?></div>
                 <?php } ?>
                 <?php if ($button) { ?>
                     <div class="new-cta-btn">
